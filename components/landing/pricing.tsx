@@ -25,7 +25,7 @@ export function Pricing() {
       className="mx-auto flex max-w-5xl flex-col items-center px-6 py-24"
     >
       <BlurFade delay={0.1} inView>
-        <div className="mb-8 inline-flex items-center rounded-full border border-zinc-800 bg-zinc-900/50 px-4 py-1.5">
+        <div className="mb-8 inline-flex items-center rounded-full border border-neutral-800 bg-neutral-900/50 px-4 py-1.5">
           <AnimatedShinyText className="text-sm">
             Offre de lancement
           </AnimatedShinyText>
@@ -33,32 +33,32 @@ export function Pricing() {
       </BlurFade>
 
       <BlurFade delay={0.2} inView>
-        <h2 className="text-center text-3xl font-bold tracking-tight text-zinc-50 md:text-5xl">
+        <h2 className="text-center text-3xl font-bold tracking-tight text-neutral-50 md:text-5xl">
           Un prix simple, pour toujours
         </h2>
       </BlurFade>
 
       <BlurFade delay={0.3} inView>
-        <div className="relative mt-12 w-full max-w-md overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900/50 p-8">
+        <div className="relative mt-12 w-full max-w-md overflow-hidden rounded-2xl border border-neutral-800 bg-neutral-900/50 p-8">
           <BorderBeam
-            colorFrom="#22c55e"
-            colorTo="#06b6d4"
+            colorFrom="#FF0000"
+            colorTo="#FF4E45"
             size={80}
             duration={8}
             borderWidth={2}
           />
 
-          <h3 className="text-2xl font-bold text-zinc-50">Juglee</h3>
+          <h3 className="text-2xl font-bold text-neutral-50">Juglee</h3>
           <div className="mt-4 flex items-baseline gap-2">
-            <span className="text-5xl font-bold text-zinc-50">9,99€</span>
-            <span className="text-zinc-400">/ paiement unique</span>
+            <span className="text-5xl font-bold text-neutral-50">9,99€</span>
+            <span className="text-neutral-400">/ paiement unique</span>
           </div>
 
           <ul className="mt-8 space-y-4">
             {features.map((feature) => (
               <li key={feature} className="flex items-center gap-3">
-                <Check className="h-5 w-5 shrink-0 text-green-500" />
-                <span className="text-zinc-300">{feature}</span>
+                <Check className="h-5 w-5 shrink-0 text-red-500" />
+                <span className="text-neutral-300">{feature}</span>
               </li>
             ))}
           </ul>
@@ -70,8 +70,8 @@ export function Pricing() {
             className="mt-8 block"
           >
             <ShimmerButton
-              background="rgba(34, 197, 94, 0.2)"
-              shimmerColor="#22c55e"
+              background="rgba(255, 0, 0, 0.2)"
+              shimmerColor="#FF0000"
               className="w-full py-4 shadow-2xl"
             >
               <span className="font-semibold text-white">
@@ -80,7 +80,7 @@ export function Pricing() {
             </ShimmerButton>
           </a>
 
-          <p className="mt-4 text-center text-xs text-zinc-500">
+          <p className="mt-4 text-center text-xs text-neutral-500">
             Paiement sécurisé par Stripe. Accès immédiat après achat.
           </p>
         </div>

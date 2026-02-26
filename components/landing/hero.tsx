@@ -15,15 +15,15 @@ export function Hero() {
       <Particles
         className="absolute inset-0 z-0"
         quantity={60}
-        color="#22c55e"
+        color="#FF0000"
         ease={80}
         size={0.6}
       />
 
       <div className="relative z-10 flex flex-col items-center text-center">
         <BlurFade delay={0.1} inView>
-          <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-zinc-800 bg-zinc-900/50 px-4 py-1.5">
-            <MonitorSmartphone className="h-4 w-4 text-zinc-400" />
+          <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-neutral-800 bg-neutral-900/50 px-4 py-1.5">
+            <MonitorSmartphone className="h-4 w-4 text-neutral-400" />
             <AnimatedShinyText className="text-sm">
               Extension Chrome pour YouTube
             </AnimatedShinyText>
@@ -32,14 +32,14 @@ export function Hero() {
 
         <BlurFade delay={0.25} inView>
           <h1 className="max-w-4xl text-5xl font-bold tracking-tight md:text-7xl">
-            <AnimatedGradientText colorFrom="#22c55e" colorTo="#06b6d4">
+            <AnimatedGradientText colorFrom="#FF0000" colorTo="#FF4E45">
               Ne regardez plus jamais la même vidéo deux fois
             </AnimatedGradientText>
           </h1>
         </BlurFade>
 
         <BlurFade delay={0.4} inView>
-          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-zinc-400 md:text-xl">
+          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-neutral-400 md:text-xl">
             Juglee marque vos vidéos YouTube comme vues avec un badge vert
             visible sur chaque miniature. Gardez le contrôle de votre
             historique, sans effort.
@@ -50,8 +50,8 @@ export function Hero() {
           <div className="mt-10 flex flex-col items-center gap-4">
             <a href={STRIPE_URL} target="_blank" rel="noopener noreferrer">
               <ShimmerButton
-                background="rgba(34, 197, 94, 0.2)"
-                shimmerColor="#22c55e"
+                background="rgba(255, 0, 0, 0.2)"
+                shimmerColor="#FF0000"
                 className="px-8 py-4 shadow-2xl"
               >
                 <span className="text-lg font-semibold text-white">
@@ -59,7 +59,7 @@ export function Hero() {
                 </span>
               </ShimmerButton>
             </a>
-            <p className="text-sm text-zinc-500">
+            <p className="text-sm text-neutral-500">
               Paiement unique. Pas d&apos;abonnement.
             </p>
           </div>

@@ -35,13 +35,13 @@ export function Features() {
   return (
     <section className="mx-auto max-w-5xl px-6 py-24">
       <BlurFade delay={0.1} inView>
-        <p className="text-center text-sm font-semibold uppercase tracking-widest text-green-500">
+        <p className="text-center text-sm font-semibold uppercase tracking-widest text-red-500">
           Fonctionnalités
         </p>
       </BlurFade>
 
       <BlurFade delay={0.2} inView>
-        <h2 className="mt-4 text-center text-3xl font-bold tracking-tight text-zinc-50 md:text-5xl">
+        <h2 className="mt-4 text-center text-3xl font-bold tracking-tight text-neutral-50 md:text-5xl">
           Tout ce dont vous avez besoin
         </h2>
       </BlurFade>
@@ -50,19 +50,19 @@ export function Features() {
         {features.map((feature, i) => (
           <BlurFade key={feature.title} delay={0.3 + i * 0.1} inView>
             <MagicCard
-              gradientColor="#22c55e10"
-              gradientFrom="#22c55e"
-              gradientTo="#06b6d4"
-              className="rounded-2xl border border-zinc-800"
+              gradientColor="#FF000010"
+              gradientFrom="#FF0000"
+              gradientTo="#FF4E45"
+              className="rounded-2xl border border-neutral-800"
             >
               <div className="p-8">
-                <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-green-500/10">
-                  <feature.icon className="h-6 w-6 text-green-500" />
+                <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-red-500/10">
+                  <feature.icon className="h-6 w-6 text-red-500" />
                 </div>
-                <h3 className="mt-6 text-xl font-semibold text-zinc-50">
+                <h3 className="mt-6 text-xl font-semibold text-neutral-50">
                   {feature.title}
                 </h3>
-                <p className="mt-3 leading-relaxed text-zinc-400">
+                <p className="mt-3 leading-relaxed text-neutral-400">
                   {feature.description}
                 </p>
               </div>

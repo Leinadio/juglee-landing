@@ -33,14 +33,14 @@ npm run lint     # ESLint
 
 - `app/page.tsx` — compose les 8 sections de la landing page
 - `app/layout.tsx` — layout racine (lang fr, dark mode forcé, SEO)
-- `app/globals.css` — thème dark green/zinc avec variables CSS shadcn
+- `app/globals.css` — thème dark YouTube (rouge/neutral) avec variables CSS shadcn
 - `components/landing/` — sections : navbar, hero, problem, features, how-it-works, pricing, faq, footer
 - `components/ui/` — composants shadcn/ui et Magic UI (auto-générés)
 
 ## Conventions
 
 - Dark mode uniquement (classe `dark` sur `<html>`)
-- Couleur primaire : green-500 (`#22c55e`), gradient vers cyan-500 (`#06b6d4`)
+- Couleurs YouTube : rouge `#FF0000` (primaire), fond `#0F0F0F`, surfaces neutral-900
 - Contenu en français
 - CTA → lien Stripe Payment Link (paiement unique 9,99€)
 - Composants sections dans `components/landing/`, composants UI dans `components/ui/`

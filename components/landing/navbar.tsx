@@ -19,19 +19,19 @@ export function Navbar() {
     <nav
       className={`fixed top-0 z-50 w-full transition-all duration-300 ${
         scrolled
-          ? "border-b border-zinc-800/50 bg-zinc-950/80 backdrop-blur-md"
+          ? "border-b border-neutral-800/50 bg-[#0F0F0F]/80 backdrop-blur-md"
           : "bg-transparent"
       }`}
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <a href="#" className="flex items-center gap-2">
-          <CheckCircle className="h-6 w-6 text-green-500" />
-          <span className="text-xl font-bold text-zinc-50">Juglee</span>
+          <CheckCircle className="h-6 w-6 text-red-500" />
+          <span className="text-xl font-bold text-neutral-50">Juglee</span>
         </a>
         <a href={STRIPE_URL} target="_blank" rel="noopener noreferrer">
           <ShimmerButton
-            background="rgba(34, 197, 94, 0.15)"
-            shimmerColor="#22c55e"
+            background="rgba(255, 0, 0, 0.15)"
+            shimmerColor="#FF0000"
             className="px-5 py-2"
           >
             <span className="text-sm font-medium text-white">
