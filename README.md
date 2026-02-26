@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Juglee Landing Page
 
-## Getting Started
+Landing page de [Juglee](https://github.com/danieldupont/juglee-extension), une extension Chrome qui marque vos vidéos YouTube comme vues avec un badge vert visible sur les miniatures.
 
-First, run the development server:
+## Stack technique
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Next.js 16** (App Router)
+- **React 19** + **TypeScript**
+- **Tailwind CSS 4**
+- **shadcn/ui** (button, accordion, badge, separator)
+- **Magic UI** (animated-gradient-text, blur-fade, magic-card, shimmer-button, shine-border, border-beam, text-animate, particles, animated-shiny-text, number-ticker)
+- **Lucide React** (icônes)
+- **Framer Motion** (animations via Magic UI)
+
+## Structure
+
+```
+app/
+  layout.tsx          # Layout racine (lang fr, dark mode, SEO metadata)
+  page.tsx            # Page principale (composition des sections)
+  globals.css         # Variables CSS, thème dark green/zinc
+
+components/
+  landing/
+    navbar.tsx        # Barre de navigation fixe avec CTA
+    hero.tsx          # Section héro avec particles et gradient text
+    problem.tsx       # Section problème avec stats animées
+    features.tsx      # 4 feature cards interactives
+    how-it-works.tsx  # 3 étapes illustrées
+    pricing.tsx       # Carte de prix unique (9,99€)
+    faq.tsx           # 6 questions/réponses en accordion
+    footer.tsx        # Pied de page
+  ui/                 # Composants shadcn/ui et Magic UI
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Développement
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm install
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Le site est accessible sur [http://localhost:3000](http://localhost:3000).
 
-## Learn More
+## Build
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run build
+npm start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Déploiement
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Déployable sur [Vercel](https://vercel.com) en connectant le repository.
