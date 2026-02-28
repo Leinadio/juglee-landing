@@ -73,11 +73,12 @@ export function Pricing() {
             className="mt-8 block"
           >
             <ShimmerButton
-              background="rgba(255, 0, 0, 0.2)"
-              shimmerColor="#FF0000"
+              background="rgba(220, 0, 0, 1)"
+              shimmerColor="rgba(255, 255, 255, 0.8)"
+              shimmerSize="2px"
               className="w-full py-4 shadow-2xl"
             >
-              <span className="font-semibold text-white">
+              <span className="font-semibold text-white drop-shadow-sm">
                 {t("cta")}
               </span>
             </ShimmerButton>

@@ -51,11 +51,12 @@ export function Hero() {
           <div className="mt-10 flex flex-col items-center gap-4">
             <a href={STRIPE_URL} target="_blank" rel="noopener noreferrer">
               <ShimmerButton
-                background="rgba(255, 0, 0, 0.2)"
-                shimmerColor="#FF0000"
+                background="rgba(220, 0, 0, 1)"
+                shimmerColor="rgba(255, 255, 255, 0.8)"
+                shimmerSize="2px"
                 className="px-8 py-4 shadow-2xl"
               >
-                <span className="text-lg font-semibold text-white">
+                <span className="text-lg font-semibold text-white drop-shadow-sm">
                   {t("cta")}
                 </span>
               </ShimmerButton>

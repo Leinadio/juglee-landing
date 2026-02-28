@@ -37,11 +37,12 @@ export function Navbar() {
           <LanguageSwitcher />
           <a href={STRIPE_URL} target="_blank" rel="noopener noreferrer">
             <ShimmerButton
-              background="rgba(255, 0, 0, 0.15)"
-              shimmerColor="#FF0000"
+              background="rgba(220, 0, 0, 1)"
+              shimmerColor="rgba(255, 255, 255, 0.8)"
+              shimmerSize="2px"
               className="px-5 py-2"
             >
-              <span className="text-sm font-medium text-white">
+              <span className="text-sm font-medium text-white drop-shadow-sm">
                 {t("cta")}
               </span>
             </ShimmerButton>
