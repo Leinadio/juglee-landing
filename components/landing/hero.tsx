@@ -1,9 +1,9 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { AnimatedGradientText } from "@/components/ui/animated-gradient-text";
 import { AnimatedShinyText } from "@/components/ui/animated-shiny-text";
 import { BlurFade } from "@/components/ui/blur-fade";
+import { Highlighter } from "@/components/ui/highlighter";
 import { Particles } from "@/components/ui/particles";
 import { ShimmerButton } from "@/components/ui/shimmer-button";
 import { MonitorSmartphone } from "lucide-react";
@@ -34,10 +34,29 @@ export function Hero() {
         </BlurFade>
 
         <BlurFade delay={0.25} inView>
-          <h1 className="max-w-4xl text-5xl font-bold tracking-tight md:text-7xl">
-            <AnimatedGradientText colorFrom="#FF0000" colorTo="#FF4E45">
-              {t("title")}
-            </AnimatedGradientText>
+          <h1 className="max-w-4xl text-5xl font-bold tracking-tight text-neutral-900 dark:text-neutral-50 md:text-7xl">
+            {t.rich("title", {
+              highlight: (chunks) => (
+                <Highlighter
+                  action="underline"
+                  color="#FF0000"
+                  strokeWidth={3}
+                  isView
+                >
+                  {chunks}
+                </Highlighter>
+              ),
+              mark: (chunks) => (
+                <Highlighter
+                  action="highlight"
+                  color="#FF000030"
+                  strokeWidth={2}
+                  isView
+                >
+                  {chunks}
+                </Highlighter>
+              ),
+            })}
           </h1>
         </BlurFade>
 

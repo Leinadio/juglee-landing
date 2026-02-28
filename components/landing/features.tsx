@@ -2,19 +2,40 @@
 
 import { useTranslations } from "next-intl";
 import { BlurFade } from "@/components/ui/blur-fade";
-import { MagicCard } from "@/components/ui/magic-card";
+import { BentoGrid, BentoCard } from "@/components/ui/bento-grid";
 import { CheckCircle, Eye, Download, Globe } from "lucide-react";
 
-const icons = [CheckCircle, Eye, Download, Globe];
+const STRIPE_URL = "https://buy.stripe.com/eVqeVdgDQ51f3EN7tD9ws00";
+
+const features = [
+  {
+    Icon: CheckCircle,
+    titleKey: "feature1Title",
+    descKey: "feature1Description",
+    className: "col-span-3 md:col-span-2",
+  },
+  {
+    Icon: Eye,
+    titleKey: "feature2Title",
+    descKey: "feature2Description",
+    className: "col-span-3 md:col-span-1",
+  },
+  {
+    Icon: Download,
+    titleKey: "feature3Title",
+    descKey: "feature3Description",
+    className: "col-span-3 md:col-span-1",
+  },
+  {
+    Icon: Globe,
+    titleKey: "feature4Title",
+    descKey: "feature4Description",
+    className: "col-span-3 md:col-span-2",
+  },
+];
 
 export function Features() {
   const t = useTranslations("Features");
-
-  const features = icons.map((icon, i) => ({
-    icon,
-    title: t(`feature${i + 1}Title`),
-    description: t(`feature${i + 1}Description`),
-  }));
 
   return (
     <section className="mx-auto max-w-5xl px-6 py-24">
@@ -30,30 +51,24 @@ export function Features() {
         </h2>
       </BlurFade>
 
-      <div className="mt-16 grid grid-cols-1 gap-6 md:grid-cols-2">
-        {features.map((feature, i) => (
-          <BlurFade key={i} delay={0.3 + i * 0.1} inView>
-            <MagicCard
-              gradientColor="#FF000010"
-              gradientFrom="#FF0000"
-              gradientTo="#FF4E45"
-              className="rounded-2xl border border-neutral-200 dark:border-neutral-800"
-            >
-              <div className="p-8">
-                <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-red-500/10">
-                  <feature.icon className="h-6 w-6 text-red-500" />
-                </div>
-                <h3 className="mt-6 text-xl font-semibold text-neutral-900 dark:text-neutral-50">
-                  {feature.title}
-                </h3>
-                <p className="mt-3 leading-relaxed text-neutral-500 dark:text-neutral-400">
-                  {feature.description}
-                </p>
-              </div>
-            </MagicCard>
-          </BlurFade>
-        ))}
-      </div>
+      <BlurFade delay={0.3} inView>
+        <BentoGrid className="mt-16 auto-rows-[14rem] md:auto-rows-[16rem]">
+          {features.map((feature, i) => (
+            <BentoCard
+              key={i}
+              name={t(feature.titleKey)}
+              description={t(feature.descKey)}
+              Icon={feature.Icon}
+              className={feature.className}
+              background={
+                <div className="absolute inset-0 bg-gradient-to-br from-red-500/5 to-transparent" />
+              }
+              href={STRIPE_URL}
+              cta={t("label")}
+            />
+          ))}
+        </BentoGrid>
+      </BlurFade>
     </section>
   );
 }
