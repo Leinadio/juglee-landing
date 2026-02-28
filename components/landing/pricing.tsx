@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { BlurFade } from "@/components/ui/blur-fade";
 import { BorderBeam } from "@/components/ui/border-beam";
 import { ShimmerButton } from "@/components/ui/shimmer-button";
@@ -8,17 +9,19 @@ import { Check } from "lucide-react";
 
 const STRIPE_URL = "https://buy.stripe.com/eVqeVdgDQ51f3EN7tD9ws00";
 
-const features = [
-  "Marquez vos vidéos comme vues",
-  "Badge vert sur les miniatures",
-  "Export et import en JSON",
-  "Fonctionne sur tout YouTube",
-  "Nettoyage automatique du stockage",
-  "Mises à jour gratuites",
-  "Support par email",
-];
+const featureKeys = [
+  "feature1",
+  "feature2",
+  "feature3",
+  "feature4",
+  "feature5",
+  "feature6",
+  "feature7",
+] as const;
 
 export function Pricing() {
+  const t = useTranslations("Pricing");
+
   return (
     <section
       id="tarif"
@@ -27,14 +30,14 @@ export function Pricing() {
       <BlurFade delay={0.1} inView>
         <div className="mb-8 inline-flex items-center rounded-full border border-neutral-800 bg-neutral-900/50 px-4 py-1.5">
           <AnimatedShinyText className="text-sm">
-            Offre de lancement
+            {t("badge")}
           </AnimatedShinyText>
         </div>
       </BlurFade>
 
       <BlurFade delay={0.2} inView>
         <h2 className="text-center text-3xl font-bold tracking-tight text-neutral-50 md:text-5xl">
-          Un prix simple, pour toujours
+          {t("title")}
         </h2>
       </BlurFade>
 
@@ -48,17 +51,17 @@ export function Pricing() {
             borderWidth={2}
           />
 
-          <h3 className="text-2xl font-bold text-neutral-50">Juglee</h3>
+          <h3 className="text-2xl font-bold text-neutral-50">{t("planName")}</h3>
           <div className="mt-4 flex items-baseline gap-2">
-            <span className="text-5xl font-bold text-neutral-50">9,99€</span>
-            <span className="text-neutral-400">/ paiement unique</span>
+            <span className="text-5xl font-bold text-neutral-50">{t("price")}</span>
+            <span className="text-neutral-400">{t("priceLabel")}</span>
           </div>
 
           <ul className="mt-8 space-y-4">
-            {features.map((feature) => (
-              <li key={feature} className="flex items-center gap-3">
+            {featureKeys.map((key) => (
+              <li key={key} className="flex items-center gap-3">
                 <Check className="h-5 w-5 shrink-0 text-red-500" />
-                <span className="text-neutral-300">{feature}</span>
+                <span className="text-neutral-300">{t(key)}</span>
               </li>
             ))}
           </ul>
@@ -75,13 +78,13 @@ export function Pricing() {
               className="w-full py-4 shadow-2xl"
             >
               <span className="font-semibold text-white">
-                Obtenir Juglee maintenant
+                {t("cta")}
               </span>
             </ShimmerButton>
           </a>
 
           <p className="mt-4 text-center text-xs text-neutral-500">
-            Paiement sécurisé par Stripe. Accès immédiat après achat.
+            {t("footnote")}
           </p>
         </div>
       </BlurFade>

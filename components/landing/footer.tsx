@@ -1,7 +1,12 @@
+"use client";
+
+import { useTranslations } from "next-intl";
 import { Separator } from "@/components/ui/separator";
 import { CheckCircle } from "lucide-react";
 
 export function Footer() {
+  const t = useTranslations("Footer");
+
   return (
     <footer className="mx-auto max-w-5xl px-6 pb-12 pt-8">
       <Separator className="mb-8 bg-neutral-800" />
@@ -11,7 +16,7 @@ export function Footer() {
           <span className="font-semibold text-neutral-50">Juglee</span>
         </div>
         <p className="text-sm text-neutral-500">
-          © 2026 Juglee. Tous droits réservés.
+          {t("copyright")}
         </p>
       </div>
     </footer>

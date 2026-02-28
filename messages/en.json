@@ -1,0 +1,88 @@
+{
+  "Metadata": {
+    "title": "Juglee — Never watch the same video twice",
+    "description": "Juglee marks your YouTube videos as watched with a visible green badge. Chrome extension so you never re-watch a video. $9.99 one-time payment.",
+    "ogTitle": "Juglee — Chrome Extension for YouTube",
+    "ogDescription": "Never watch the same video twice."
+  },
+  "Navbar": {
+    "cta": "Get Juglee"
+  },
+  "Hero": {
+    "badge": "Chrome Extension for YouTube",
+    "title": "Never watch the same video twice",
+    "subtitle": "Juglee marks your YouTube videos as watched with a visible green badge on every thumbnail. Stay in control of your watch history, effortlessly.",
+    "cta": "Get Juglee — $9.99",
+    "ctaSubtext": "One-time payment. No subscription."
+  },
+  "Problem": {
+    "label": "The problem",
+    "title": "YouTube doesn't remember what you've watched",
+    "description": "You scroll through your recommendations and come across a video. You click, watch 30 seconds... and realize you've already seen it. It's frustrating and a waste of your time.",
+    "stat1Value": "40",
+    "stat1Suffix": "%",
+    "stat1Label": "of users accidentally re-watch videos",
+    "stat2Value": "2",
+    "stat2Suffix": "h+",
+    "stat2Label": "lost per month due to already-watched videos",
+    "stat3Value": "500",
+    "stat3Suffix": "M+",
+    "stat3Label": "videos on YouTube with no tracking system"
+  },
+  "Features": {
+    "label": "Features",
+    "title": "Everything you need",
+    "feature1Title": "Mark your videos as watched",
+    "feature1Description": "A single click to mark a video as watched. The green icon appears instantly on the thumbnail.",
+    "feature2Title": "Green badge on every thumbnail",
+    "feature2Description": "Spot already-watched videos at a glance thanks to the green badge displayed directly on YouTube.",
+    "feature3Title": "Export and import your data",
+    "feature3Description": "Back up your watch history as JSON and restore it anytime. Your data belongs to you.",
+    "feature4Title": "Works across all of YouTube",
+    "feature4Description": "Home page, search, channels, playlists, Shorts... Juglee works everywhere thumbnails are displayed."
+  },
+  "HowItWorks": {
+    "label": "How it works",
+    "title": "Dead simple",
+    "step1Title": "Install the extension",
+    "step1Description": "Add Juglee to Chrome in one click. No setup required.",
+    "step2Title": "Browse YouTube",
+    "step2Description": "Browse YouTube as usual. Juglee works in the background.",
+    "step3Title": "Mark and spot",
+    "step3Description": "Click the icon to mark a video. The green badge appears on the thumbnail."
+  },
+  "Pricing": {
+    "badge": "Launch offer",
+    "title": "One simple price, forever",
+    "planName": "Juglee",
+    "price": "$9.99",
+    "priceLabel": "/ one-time payment",
+    "cta": "Get Juglee now",
+    "footnote": "Secure payment via Stripe. Instant access after purchase.",
+    "feature1": "Mark your videos as watched",
+    "feature2": "Green badge on thumbnails",
+    "feature3": "Export and import as JSON",
+    "feature4": "Works across all of YouTube",
+    "feature5": "Automatic storage cleanup",
+    "feature6": "Free updates",
+    "feature7": "Email support"
+  },
+  "FAQ": {
+    "title": "Frequently asked questions",
+    "q1": "How does Juglee work?",
+    "a1": "Juglee is a Chrome extension that integrates directly into YouTube. Once installed, it lets you manually mark videos as watched. A green badge then appears on the thumbnails of marked videos, everywhere on YouTube.",
+    "q2": "Is it a subscription?",
+    "a2": "No. Juglee costs $9.99 as a one-time payment. You pay once and get access to the extension forever, updates included.",
+    "q3": "Is my data secure?",
+    "a3": "Yes. All your data is stored locally in your browser via chrome.storage.local. No data is sent to any external server. You can also export your data as JSON at any time.",
+    "q4": "What happens if I have too many marked videos?",
+    "a4": "Juglee includes an automatic cleanup system. When storage reaches 9 MB, the oldest videos are automatically removed to free up space.",
+    "q5": "Does the extension work on Firefox or Safari?",
+    "a5": "For now, Juglee is available only on Google Chrome and Chromium-based browsers like Edge, Brave, Opera, etc. A Firefox version may be considered in the future.",
+    "q6": "How can I get help?",
+    "a6": "You can reach us by email for any question or issue. We typically respond within 24 hours."
+  },
+  "Footer": {
+    "copyright": "© 2026 Juglee. All rights reserved."
+  }
+}

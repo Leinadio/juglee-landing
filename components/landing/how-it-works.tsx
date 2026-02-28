@@ -1,44 +1,33 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { BlurFade } from "@/components/ui/blur-fade";
 import { Download, Play, MousePointerClick } from "lucide-react";
 
-const steps = [
-  {
-    number: "01",
-    icon: Download,
-    title: "Installez l'extension",
-    description:
-      "Ajoutez Juglee à Chrome en un clic. Aucune configuration nécessaire.",
-  },
-  {
-    number: "02",
-    icon: Play,
-    title: "Naviguez sur YouTube",
-    description:
-      "Parcourez YouTube normalement. Juglee fonctionne en arrière-plan.",
-  },
-  {
-    number: "03",
-    icon: MousePointerClick,
-    title: "Marquez et repérez",
-    description:
-      "Cliquez sur l'icône pour marquer une vidéo. Le badge vert apparaît sur la miniature.",
-  },
-];
+const icons = [Download, Play, MousePointerClick];
+const numbers = ["01", "02", "03"];
 
 export function HowItWorks() {
+  const t = useTranslations("HowItWorks");
+
+  const steps = icons.map((icon, i) => ({
+    number: numbers[i],
+    icon,
+    title: t(`step${i + 1}Title`),
+    description: t(`step${i + 1}Description`),
+  }));
+
   return (
     <section className="mx-auto max-w-5xl px-6 py-24">
       <BlurFade delay={0.1} inView>
         <p className="text-center text-sm font-semibold uppercase tracking-widest text-red-500">
-          Comment ça marche
+          {t("label")}
         </p>
       </BlurFade>
 
       <BlurFade delay={0.2} inView>
         <h2 className="mt-4 text-center text-3xl font-bold tracking-tight text-neutral-50 md:text-5xl">
-          Simple comme bonjour
+          {t("title")}
         </h2>
       </BlurFade>
 

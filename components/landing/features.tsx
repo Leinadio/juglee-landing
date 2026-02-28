@@ -1,54 +1,38 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { BlurFade } from "@/components/ui/blur-fade";
 import { MagicCard } from "@/components/ui/magic-card";
 import { CheckCircle, Eye, Download, Globe } from "lucide-react";
 
-const features = [
-  {
-    icon: CheckCircle,
-    title: "Marquez vos vidéos comme vues",
-    description:
-      "Un simple clic pour marquer une vidéo comme vue. L'icône verte apparaît instantanément sur la miniature.",
-  },
-  {
-    icon: Eye,
-    title: "Badge vert sur chaque miniature",
-    description:
-      "Repérez en un coup d'œil les vidéos déjà vues grâce au badge vert affiché directement sur YouTube.",
-  },
-  {
-    icon: Download,
-    title: "Exportez et importez vos données",
-    description:
-      "Sauvegardez votre historique en JSON et restaurez-le à tout moment. Vos données vous appartiennent.",
-  },
-  {
-    icon: Globe,
-    title: "Fonctionne sur tout YouTube",
-    description:
-      "Page d'accueil, recherche, chaînes, playlists, Shorts… Juglee fonctionne partout où des miniatures sont affichées.",
-  },
-];
+const icons = [CheckCircle, Eye, Download, Globe];
 
 export function Features() {
+  const t = useTranslations("Features");
+
+  const features = icons.map((icon, i) => ({
+    icon,
+    title: t(`feature${i + 1}Title`),
+    description: t(`feature${i + 1}Description`),
+  }));
+
   return (
     <section className="mx-auto max-w-5xl px-6 py-24">
       <BlurFade delay={0.1} inView>
         <p className="text-center text-sm font-semibold uppercase tracking-widest text-red-500">
-          Fonctionnalités
+          {t("label")}
         </p>
       </BlurFade>
 
       <BlurFade delay={0.2} inView>
         <h2 className="mt-4 text-center text-3xl font-bold tracking-tight text-neutral-50 md:text-5xl">
-          Tout ce dont vous avez besoin
+          {t("title")}
         </h2>
       </BlurFade>
 
       <div className="mt-16 grid grid-cols-1 gap-6 md:grid-cols-2">
         {features.map((feature, i) => (
-          <BlurFade key={feature.title} delay={0.3 + i * 0.1} inView>
+          <BlurFade key={i} delay={0.3 + i * 0.1} inView>
             <MagicCard
               gradientColor="#FF000010"
               gradientFrom="#FF0000"

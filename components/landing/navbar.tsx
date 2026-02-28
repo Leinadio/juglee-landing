@@ -1,12 +1,15 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useTranslations } from "next-intl";
 import { ShimmerButton } from "@/components/ui/shimmer-button";
 import { CheckCircle } from "lucide-react";
+import { LanguageSwitcher } from "./language-switcher";
 
 const STRIPE_URL = "https://buy.stripe.com/eVqeVdgDQ51f3EN7tD9ws00";
 
 export function Navbar() {
+  const t = useTranslations("Navbar");
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -28,17 +31,20 @@ export function Navbar() {
           <CheckCircle className="h-6 w-6 text-red-500" />
           <span className="text-xl font-bold text-neutral-50">Juglee</span>
         </a>
-        <a href={STRIPE_URL} target="_blank" rel="noopener noreferrer">
-          <ShimmerButton
-            background="rgba(255, 0, 0, 0.15)"
-            shimmerColor="#FF0000"
-            className="px-5 py-2"
-          >
-            <span className="text-sm font-medium text-white">
-              Obtenir Juglee
-            </span>
-          </ShimmerButton>
-        </a>
+        <div className="flex items-center gap-3">
+          <LanguageSwitcher />
+          <a href={STRIPE_URL} target="_blank" rel="noopener noreferrer">
+            <ShimmerButton
+              background="rgba(255, 0, 0, 0.15)"
+              shimmerColor="#FF0000"
+              className="px-5 py-2"
+            >
+              <span className="text-sm font-medium text-white">
+                {t("cta")}
+              </span>
+            </ShimmerButton>
+          </a>
+        </div>
       </div>
     </nav>
   );
