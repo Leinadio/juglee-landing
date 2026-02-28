@@ -13,13 +13,13 @@ export function LanguageSwitcher() {
   }
 
   return (
-    <div className="flex items-center rounded-full border border-neutral-800 bg-neutral-900/50 p-0.5 text-xs font-medium">
+    <div className="flex items-center rounded-full border border-neutral-200 dark:border-neutral-800 bg-neutral-100 dark:bg-neutral-900/50 p-0.5 text-xs font-medium">
       <button
         onClick={() => switchLocale("en")}
         className={`rounded-full px-3 py-1 transition-colors ${
           locale === "en"
-            ? "bg-neutral-700 text-neutral-50"
-            : "text-neutral-400 hover:text-neutral-200"
+            ? "bg-neutral-200 dark:bg-neutral-700 text-neutral-900 dark:text-neutral-50"
+            : "text-neutral-500 dark:text-neutral-400 hover:text-neutral-700 dark:hover:text-neutral-200"
         }`}
       >
         EN
@@ -28,8 +28,8 @@ export function LanguageSwitcher() {
         onClick={() => switchLocale("fr")}
         className={`rounded-full px-3 py-1 transition-colors ${
           locale === "fr"
-            ? "bg-neutral-700 text-neutral-50"
-            : "text-neutral-400 hover:text-neutral-200"
+            ? "bg-neutral-200 dark:bg-neutral-700 text-neutral-900 dark:text-neutral-50"
+            : "text-neutral-500 dark:text-neutral-400 hover:text-neutral-700 dark:hover:text-neutral-200"
         }`}
       >
         FR

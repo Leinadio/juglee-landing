@@ -34,13 +34,13 @@ export function Problem() {
       </BlurFade>
 
       <BlurFade delay={0.2} inView>
-        <h2 className="mt-4 text-3xl font-bold tracking-tight text-neutral-50 md:text-5xl">
+        <h2 className="mt-4 text-3xl font-bold tracking-tight text-neutral-900 dark:text-neutral-50 md:text-5xl">
           {t("title")}
         </h2>
       </BlurFade>
 
       <BlurFade delay={0.3} inView>
-        <p className="mt-6 max-w-3xl text-lg leading-relaxed text-neutral-400">
+        <p className="mt-6 max-w-3xl text-lg leading-relaxed text-neutral-500 dark:text-neutral-400">
           {t("description")}
         </p>
       </BlurFade>
@@ -53,7 +53,7 @@ export function Problem() {
                 <NumberTicker value={stat.value} delay={0.5 + i * 0.15} />
                 {stat.suffix}
               </div>
-              <p className="mt-2 text-sm text-neutral-400">{stat.label}</p>
+              <p className="mt-2 text-sm text-neutral-500 dark:text-neutral-400">{stat.label}</p>
             </div>
           </BlurFade>
         ))}

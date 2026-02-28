@@ -25,8 +25,8 @@ export function Hero() {
 
       <div className="relative z-10 flex flex-col items-center text-center">
         <BlurFade delay={0.1} inView>
-          <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-neutral-800 bg-neutral-900/50 px-4 py-1.5">
-            <MonitorSmartphone className="h-4 w-4 text-neutral-400" />
+          <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-neutral-200 dark:border-neutral-800 bg-neutral-100 dark:bg-neutral-900/50 px-4 py-1.5">
+            <MonitorSmartphone className="h-4 w-4 text-neutral-500 dark:text-neutral-400" />
             <AnimatedShinyText className="text-sm">
               {t("badge")}
             </AnimatedShinyText>
@@ -42,7 +42,7 @@ export function Hero() {
         </BlurFade>
 
         <BlurFade delay={0.4} inView>
-          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-neutral-400 md:text-xl">
+          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-neutral-500 dark:text-neutral-400 md:text-xl">
             {t("subtitle")}
           </p>
         </BlurFade>
@@ -60,7 +60,7 @@ export function Hero() {
                 </span>
               </ShimmerButton>
             </a>
-            <p className="text-sm text-neutral-500">
+            <p className="text-sm text-neutral-400 dark:text-neutral-500">
               {t("ctaSubtext")}
             </p>
           </div>

@@ -26,14 +26,14 @@ export function HowItWorks() {
       </BlurFade>
 
       <BlurFade delay={0.2} inView>
-        <h2 className="mt-4 text-center text-3xl font-bold tracking-tight text-neutral-50 md:text-5xl">
+        <h2 className="mt-4 text-center text-3xl font-bold tracking-tight text-neutral-900 dark:text-neutral-50 md:text-5xl">
           {t("title")}
         </h2>
       </BlurFade>
 
       <div className="relative mt-16 grid grid-cols-1 gap-8 md:grid-cols-3">
         {/* Connecting line */}
-        <div className="absolute top-16 right-[16.67%] left-[16.67%] hidden h-px border-t border-dashed border-neutral-700 md:block" />
+        <div className="absolute top-16 right-[16.67%] left-[16.67%] hidden h-px border-t border-dashed border-neutral-300 dark:border-neutral-700 md:block" />
 
         {steps.map((step, i) => (
           <BlurFade key={step.number} delay={0.3 + i * 0.15} inView>
@@ -42,14 +42,14 @@ export function HowItWorks() {
                 <span className="absolute text-7xl font-bold text-red-500/10">
                   {step.number}
                 </span>
-                <div className="relative z-10 flex h-14 w-14 items-center justify-center rounded-full border border-neutral-800 bg-neutral-900">
+                <div className="relative z-10 flex h-14 w-14 items-center justify-center rounded-full border border-neutral-200 dark:border-neutral-800 bg-neutral-100 dark:bg-neutral-900">
                   <step.icon className="h-6 w-6 text-red-500" />
                 </div>
               </div>
-              <h3 className="mt-4 text-xl font-semibold text-neutral-50">
+              <h3 className="mt-4 text-xl font-semibold text-neutral-900 dark:text-neutral-50">
                 {step.title}
               </h3>
-              <p className="mt-2 max-w-xs text-neutral-400">
+              <p className="mt-2 max-w-xs text-neutral-500 dark:text-neutral-400">
                 {step.description}
               </p>
             </div>

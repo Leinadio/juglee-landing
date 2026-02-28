@@ -17,7 +17,7 @@ export function FAQ() {
   return (
     <section id="faq" className="mx-auto max-w-3xl px-6 py-24">
       <BlurFade delay={0.1} inView>
-        <h2 className="text-center text-3xl font-bold tracking-tight text-neutral-50 md:text-4xl">
+        <h2 className="text-center text-3xl font-bold tracking-tight text-neutral-900 dark:text-neutral-50 md:text-4xl">
           {t("title")}
         </h2>
       </BlurFade>
@@ -28,12 +28,12 @@ export function FAQ() {
             <AccordionItem
               key={n}
               value={`item-${n}`}
-              className="border-neutral-800"
+              className="border-neutral-200 dark:border-neutral-800"
             >
-              <AccordionTrigger className="text-left text-neutral-50 hover:text-red-500">
+              <AccordionTrigger className="text-left text-neutral-900 dark:text-neutral-50 hover:text-red-500">
                 {t(`q${n}`)}
               </AccordionTrigger>
-              <AccordionContent className="text-neutral-400">
+              <AccordionContent className="text-neutral-500 dark:text-neutral-400">
                 {t(`a${n}`)}
               </AccordionContent>
             </AccordionItem>

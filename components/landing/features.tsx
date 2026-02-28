@@ -25,7 +25,7 @@ export function Features() {
       </BlurFade>
 
       <BlurFade delay={0.2} inView>
-        <h2 className="mt-4 text-center text-3xl font-bold tracking-tight text-neutral-50 md:text-5xl">
+        <h2 className="mt-4 text-center text-3xl font-bold tracking-tight text-neutral-900 dark:text-neutral-50 md:text-5xl">
           {t("title")}
         </h2>
       </BlurFade>
@@ -37,16 +37,16 @@ export function Features() {
               gradientColor="#FF000010"
               gradientFrom="#FF0000"
               gradientTo="#FF4E45"
-              className="rounded-2xl border border-neutral-800"
+              className="rounded-2xl border border-neutral-200 dark:border-neutral-800"
             >
               <div className="p-8">
                 <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-red-500/10">
                   <feature.icon className="h-6 w-6 text-red-500" />
                 </div>
-                <h3 className="mt-6 text-xl font-semibold text-neutral-50">
+                <h3 className="mt-6 text-xl font-semibold text-neutral-900 dark:text-neutral-50">
                   {feature.title}
                 </h3>
-                <p className="mt-3 leading-relaxed text-neutral-400">
+                <p className="mt-3 leading-relaxed text-neutral-500 dark:text-neutral-400">
                   {feature.description}
                 </p>
               </div>

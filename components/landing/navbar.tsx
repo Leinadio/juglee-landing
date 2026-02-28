@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import { ShimmerButton } from "@/components/ui/shimmer-button";
 import { CheckCircle } from "lucide-react";
 import { LanguageSwitcher } from "./language-switcher";
+import { ThemeToggle } from "./theme-toggle";
 
 const STRIPE_URL = "https://buy.stripe.com/eVqeVdgDQ51f3EN7tD9ws00";
 
@@ -22,16 +23,17 @@ export function Navbar() {
     <nav
       className={`fixed top-0 z-50 w-full transition-all duration-300 ${
         scrolled
-          ? "border-b border-neutral-800/50 bg-[#0F0F0F]/80 backdrop-blur-md"
+          ? "border-b border-neutral-200 dark:border-neutral-800/50 bg-white/80 dark:bg-[#0F0F0F]/80 backdrop-blur-md"
           : "bg-transparent"
       }`}
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <a href="#" className="flex items-center gap-2">
           <CheckCircle className="h-6 w-6 text-red-500" />
-          <span className="text-xl font-bold text-neutral-50">Juglee</span>
+          <span className="text-xl font-bold text-neutral-900 dark:text-neutral-50">Juglee</span>
         </a>
         <div className="flex items-center gap-3">
+          <ThemeToggle />
           <LanguageSwitcher />
           <a href={STRIPE_URL} target="_blank" rel="noopener noreferrer">
             <ShimmerButton
