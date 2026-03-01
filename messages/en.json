@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Juglee — Never watch the same video twice",
-    "description": "Juglee marks your YouTube videos as watched with a visible green badge. Chrome extension so you never re-watch a video. $9.99 one-time payment.",
+    "description": "Juglee marks your YouTube videos as watched with a visible green badge. Chrome extension so you never re-watch a video. $4.99 one-time payment.",
     "ogTitle": "Juglee — Chrome Extension for YouTube",
     "ogDescription": "Never watch the same video twice."
   },
@@ -12,7 +12,7 @@
     "badge": "Chrome Extension for YouTube",
     "title": "Mark <highlight>YouTube videos</highlight> as <mark>watched</mark>, in one click",
     "subtitle": "Juglee marks your YouTube videos as watched with a visible green badge on every thumbnail. Stay in control of your watch history, effortlessly.",
-    "cta": "Get Juglee — $9.99",
+    "cta": "Get Juglee — $4.99",
     "ctaSubtext": "One-time payment. No subscription."
   },
   "Problem": {
@@ -55,7 +55,7 @@
     "badge": "Launch offer",
     "title": "One simple price, forever",
     "planName": "Juglee",
-    "price": "$9.99",
+    "price": "$4.99",
     "priceLabel": "/ one-time payment",
     "cta": "Get Juglee now",
     "footnote": "Secure payment via Stripe. Instant access after purchase.",
@@ -72,7 +72,7 @@
     "q1": "How does Juglee work?",
     "a1": "Juglee is a Chrome extension that integrates directly into YouTube. Once installed, it lets you manually mark videos as watched. A green badge then appears on the thumbnails of marked videos, everywhere on YouTube.",
     "q2": "Is it a subscription?",
-    "a2": "No. Juglee costs $9.99 as a one-time payment. You pay once and get access to the extension forever, updates included.",
+    "a2": "No. Juglee costs $4.99 as a one-time payment. You pay once and get access to the extension forever, updates included.",
     "q3": "Is my data secure?",
     "a3": "Yes. All your data is stored locally in your browser via chrome.storage.local. No data is sent to any external server. You can also export your data as JSON at any time.",
     "q4": "What happens if I have too many marked videos?",
@@ -84,5 +84,23 @@
   },
   "Footer": {
     "copyright": "© 2026 Juglee. All rights reserved."
+  },
+  "Download": {
+    "title": "Download Juglee",
+    "subtitle": "Enter your license key to download the extension.",
+    "label": "License Key",
+    "verify": "Verify Key",
+    "verifying": "Verifying...",
+    "successTitle": "Key verified!",
+    "successDescription": "Your license key is valid. Click below to download the extension.",
+    "downloadButton": "Download Juglee Extension",
+    "errorTitle": "Invalid key",
+    "errorDescription": "This license key was not found. Please check your email and try again.",
+    "installTitle": "How to install the extension",
+    "installStep1": "Unzip the downloaded .zip file",
+    "installStep2": "Open chrome://extensions in Chrome",
+    "installStep3": "Enable \"Developer mode\" in the top right",
+    "installStep4": "Click \"Load unpacked\"",
+    "installStep5": "Select the unzipped folder"
   }
 }

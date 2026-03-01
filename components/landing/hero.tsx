@@ -8,7 +8,7 @@ import { Particles } from "@/components/ui/particles";
 import { ShimmerButton } from "@/components/ui/shimmer-button";
 import { MonitorSmartphone } from "lucide-react";
 
-const STRIPE_URL = "https://buy.stripe.com/eVqeVdgDQ51f3EN7tD9ws00";
+const STRIPE_URL = process.env.NEXT_PUBLIC_STRIPE_URL!;
 
 export function Hero() {
   const t = useTranslations("Hero");

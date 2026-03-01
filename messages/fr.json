@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Juglee — Ne regarde plus jamais la même vidéo deux fois",
-    "description": "Juglee marque vos vidéos YouTube comme vues avec un badge vert visible. Extension Chrome pour ne plus jamais revoir une vidéo. 9,99€ paiement unique.",
+    "description": "Juglee marque vos vidéos YouTube comme vues avec un badge vert visible. Extension Chrome pour ne plus jamais revoir une vidéo. 4,99€ paiement unique.",
     "ogTitle": "Juglee — Extension Chrome pour YouTube",
     "ogDescription": "Ne regarde plus jamais la même vidéo deux fois."
   },
@@ -12,7 +12,7 @@
     "badge": "Extension Chrome pour YouTube",
     "title": "Marquez vos <highlight>vidéos YouTube</highlight> comme <mark>vues</mark>, en un clic",
     "subtitle": "Juglee marque vos vidéos YouTube comme vues avec un badge vert visible sur chaque miniature. Gardez le contrôle de votre historique, sans effort.",
-    "cta": "Obtenir Juglee — 9,99€",
+    "cta": "Obtenir Juglee — 4,99€",
     "ctaSubtext": "Paiement unique. Sans abonnement."
   },
   "Problem": {
@@ -55,7 +55,7 @@
     "badge": "Offre de lancement",
     "title": "Un prix simple, pour toujours",
     "planName": "Juglee",
-    "price": "9,99€",
+    "price": "4,99€",
     "priceLabel": "/ paiement unique",
     "cta": "Obtenir Juglee maintenant",
     "footnote": "Paiement sécurisé via Stripe. Accès instantané après achat.",
@@ -72,7 +72,7 @@
     "q1": "Comment fonctionne Juglee ?",
     "a1": "Juglee est une extension Chrome qui s'intègre directement dans YouTube. Une fois installée, elle vous permet de marquer manuellement des vidéos comme vues. Un badge vert apparaît alors sur les miniatures des vidéos marquées, partout sur YouTube.",
     "q2": "C'est un abonnement ?",
-    "a2": "Non. Juglee coûte 9,99€ en paiement unique. Vous payez une fois et accédez à l'extension pour toujours, mises à jour incluses.",
+    "a2": "Non. Juglee coûte 4,99€ en paiement unique. Vous payez une fois et accédez à l'extension pour toujours, mises à jour incluses.",
     "q3": "Mes données sont-elles en sécurité ?",
     "a3": "Oui. Toutes vos données sont stockées localement dans votre navigateur via chrome.storage.local. Aucune donnée n'est envoyée à un serveur externe. Vous pouvez aussi exporter vos données en JSON à tout moment.",
     "q4": "Que se passe-t-il si j'ai trop de vidéos marquées ?",
@@ -84,5 +84,23 @@
   },
   "Footer": {
     "copyright": "© 2026 Juglee. Tous droits réservés."
+  },
+  "Download": {
+    "title": "Télécharger Juglee",
+    "subtitle": "Entrez votre clé de licence pour télécharger l'extension.",
+    "label": "Clé de licence",
+    "verify": "Vérifier la clé",
+    "verifying": "Vérification...",
+    "successTitle": "Clé vérifiée !",
+    "successDescription": "Votre clé de licence est valide. Cliquez ci-dessous pour télécharger l'extension.",
+    "downloadButton": "Télécharger l'extension Juglee",
+    "errorTitle": "Clé invalide",
+    "errorDescription": "Cette clé de licence n'a pas été trouvée. Vérifiez votre email et réessayez.",
+    "installTitle": "Comment installer l'extension",
+    "installStep1": "Décompressez le fichier .zip téléchargé",
+    "installStep2": "Ouvrez chrome://extensions dans Chrome",
+    "installStep3": "Activez le \"Mode développeur\" en haut à droite",
+    "installStep4": "Cliquez sur \"Charger l'extension non empaquetée\"",
+    "installStep5": "Sélectionnez le dossier décompressé"
   }
 }

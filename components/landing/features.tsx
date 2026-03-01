@@ -5,7 +5,7 @@ import { BlurFade } from "@/components/ui/blur-fade";
 import { BentoGrid, BentoCard } from "@/components/ui/bento-grid";
 import { CheckCircle, Eye, Download, Globe } from "lucide-react";
 
-const STRIPE_URL = "https://buy.stripe.com/eVqeVdgDQ51f3EN7tD9ws00";
+const STRIPE_URL = process.env.NEXT_PUBLIC_STRIPE_URL!;
 
 const features = [
   {

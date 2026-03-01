@@ -7,7 +7,7 @@ import { ShimmerButton } from "@/components/ui/shimmer-button";
 import { AnimatedShinyText } from "@/components/ui/animated-shiny-text";
 import { Check } from "lucide-react";
 
-const STRIPE_URL = "https://buy.stripe.com/eVqeVdgDQ51f3EN7tD9ws00";
+const STRIPE_URL = process.env.NEXT_PUBLIC_STRIPE_URL!;
 
 const featureKeys = [
   "feature1",

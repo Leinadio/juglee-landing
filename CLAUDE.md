@@ -42,7 +42,7 @@ npm run lint     # ESLint
 - Dark mode uniquement (classe `dark` sur `<html>`)
 - Couleurs YouTube : rouge `#FF0000` (primaire), fond `#0F0F0F`, surfaces neutral-900
 - Contenu en français
-- CTA → lien Stripe Payment Link (paiement unique 9,99€)
+- CTA → lien Stripe Payment Link (paiement unique 4,99€)
 - Composants sections dans `components/landing/`, composants UI dans `components/ui/`
 
 ## Lien Stripe

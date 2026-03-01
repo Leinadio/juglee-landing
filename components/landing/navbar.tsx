@@ -7,7 +7,7 @@ import { CheckCircle } from "lucide-react";
 import { LanguageSwitcher } from "./language-switcher";
 import { ThemeToggle } from "./theme-toggle";
 
-const STRIPE_URL = "https://buy.stripe.com/eVqeVdgDQ51f3EN7tD9ws00";
+const STRIPE_URL = process.env.NEXT_PUBLIC_STRIPE_URL!;
 
 export function Navbar() {
   const t = useTranslations("Navbar");
