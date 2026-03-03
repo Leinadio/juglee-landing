@@ -38,8 +38,8 @@
     "feature2Description": "Spot already-watched videos at a glance thanks to the badge displayed directly on YouTube.",
     "feature3Title": "Your dashboard at a glance",
     "feature3Description": "Track your watched videos, browse your history, and manage your data — all from the extension popup.",
-    "feature4Title": "Works across all of YouTube",
-    "feature4Description": "Home page, search, channels, playlists, Shorts... Juglee works everywhere thumbnails are displayed."
+    "feature4Title": "Your data stays private",
+    "feature4Description": "All your data is stored locally in your browser. Nothing is sent to any server. You're in full control."
   },
   "HowItWorks": {
     "label": "How it works",

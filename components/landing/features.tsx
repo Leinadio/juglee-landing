@@ -3,7 +3,7 @@
 import { useTranslations } from "next-intl";
 import { BlurFade } from "@/components/ui/blur-fade";
 import { BentoGrid, BentoCard } from "@/components/ui/bento-grid";
-import { CheckCircle, Eye, LayoutDashboard, Globe } from "lucide-react";
+import { CheckCircle, Eye, LayoutDashboard, ShieldCheck } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const features = [
@@ -32,10 +32,12 @@ const features = [
     height: "h-[22rem]",
   },
   {
-    Icon: Globe,
+    Icon: ShieldCheck,
     titleKey: "feature4Title",
     descKey: "feature4Description",
     className: "col-span-3 md:col-span-2",
+    backgroundImage: "/images/privacy.svg",
+    height: "h-[22rem]",
   },
 ];
 
@@ -116,7 +118,7 @@ export function Features() {
                 name={t(feature.titleKey)}
                 description={t(feature.descKey)}
                 Icon={feature.Icon}
-                className={cn(feature.className, "h-[16rem]")}
+                className={cn(feature.className, feature.height || "h-[16rem]")}
                 background={
                   <div className="absolute inset-0 bg-gradient-to-br from-[#fc4e4e]/8 to-[#d0a0ff]/8" />
                 }

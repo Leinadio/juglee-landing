@@ -38,8 +38,8 @@
     "feature2Description": "Repérez les vidéos déjà vues en un coup d'œil grâce au badge affiché directement sur YouTube.",
     "feature3Title": "Votre tableau de bord en un clin d'œil",
     "feature3Description": "Suivez vos vidéos vues, parcourez votre historique et gérez vos données — le tout depuis le popup de l'extension.",
-    "feature4Title": "Fonctionne partout sur YouTube",
-    "feature4Description": "Accueil, recherche, chaînes, playlists, Shorts... Juglee fonctionne partout où les miniatures sont affichées."
+    "feature4Title": "Vos données restent privées",
+    "feature4Description": "Toutes vos données sont stockées localement dans votre navigateur. Rien n'est envoyé à un serveur. Vous gardez le contrôle total."
   },
   "HowItWorks": {
     "label": "Comment ça marche",
