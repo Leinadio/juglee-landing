@@ -1,19 +1,19 @@
 {
   "Metadata": {
     "title": "Juglee — Ne regarde plus jamais la même vidéo deux fois",
-    "description": "Juglee marque vos vidéos YouTube comme vues avec un badge vert visible. Extension Chrome pour ne plus jamais revoir une vidéo. 4,99€ paiement unique.",
+    "description": "Juglee marque vos vidéos YouTube comme vues avec un badge vert visible. Extension Chrome gratuite pour ne plus jamais revoir une vidéo.",
     "ogTitle": "Juglee — Extension Chrome pour YouTube",
     "ogDescription": "Ne regarde plus jamais la même vidéo deux fois."
   },
   "Navbar": {
-    "cta": "Obtenir Juglee"
+    "cta": "Télécharger Juglee"
   },
   "Hero": {
     "badge": "Extension Chrome pour YouTube",
     "title": "Marquez vos <highlight>vidéos YouTube</highlight> comme <mark>vues</mark>, en un clic",
     "subtitle": "Juglee marque vos vidéos YouTube comme vues avec un badge vert visible sur chaque miniature. Gardez le contrôle de votre historique, sans effort.",
-    "cta": "Obtenir Juglee — 4,99€",
-    "ctaSubtext": "Paiement unique. Sans abonnement."
+    "cta": "Télécharger gratuitement",
+    "ctaSubtext": "100% gratuit. Aucun compte requis."
   },
   "Problem": {
     "label": "Le problème",
@@ -52,27 +52,33 @@
     "step3Description": "Cliquez sur l'icône pour marquer une vidéo. Le badge vert apparaît sur la miniature."
   },
   "Pricing": {
-    "badge": "Offre de lancement",
-    "title": "Un prix simple, pour toujours",
+    "badge": "Gratuit",
+    "title": "Gratuit, pour toujours",
     "planName": "Juglee",
-    "price": "4,99€",
-    "priceLabel": "/ paiement unique",
-    "cta": "Obtenir Juglee maintenant",
-    "footnote": "Paiement sécurisé via Stripe. Accès instantané après achat.",
+    "price": "0€",
+    "priceLabel": "/ gratuit pour toujours",
+    "cta": "Télécharger le .zip",
+    "footnote": "Compatible avec Chrome et les navigateurs Chromium (Edge, Brave, Opera...).",
     "feature1": "Marquez vos vidéos comme vues",
     "feature2": "Badge vert sur les miniatures",
     "feature3": "Export et import en JSON",
     "feature4": "Fonctionne partout sur YouTube",
     "feature5": "Nettoyage automatique du stockage",
     "feature6": "Mises à jour gratuites",
-    "feature7": "Support par email"
+    "feature7": "Support par email",
+    "installTitle": "Comment installer l'extension",
+    "installStep1": "Décompressez le fichier .zip téléchargé",
+    "installStep2": "Ouvrez <code>chrome://extensions</code> dans Chrome",
+    "installStep3": "Activez le <bold>Mode développeur</bold> en haut à droite",
+    "installStep4": "Cliquez sur <bold>Charger l'extension non empaquetée</bold>",
+    "installStep5": "Sélectionnez le dossier décompressé"
   },
   "FAQ": {
     "title": "Questions fréquentes",
     "q1": "Comment fonctionne Juglee ?",
     "a1": "Juglee est une extension Chrome qui s'intègre directement dans YouTube. Une fois installée, elle vous permet de marquer manuellement des vidéos comme vues. Un badge vert apparaît alors sur les miniatures des vidéos marquées, partout sur YouTube.",
-    "q2": "C'est un abonnement ?",
-    "a2": "Non. Juglee coûte 4,99€ en paiement unique. Vous payez une fois et accédez à l'extension pour toujours, mises à jour incluses.",
+    "q2": "C'est vraiment gratuit ?",
+    "a2": "Oui. Juglee est 100% gratuit et le restera. Pas d'abonnement, pas de frais cachés. Installez l'extension et utilisez-la sans limite.",
     "q3": "Mes données sont-elles en sécurité ?",
     "a3": "Oui. Toutes vos données sont stockées localement dans votre navigateur via chrome.storage.local. Aucune donnée n'est envoyée à un serveur externe. Vous pouvez aussi exporter vos données en JSON à tout moment.",
     "q4": "Que se passe-t-il si j'ai trop de vidéos marquées ?",

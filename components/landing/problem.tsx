@@ -28,7 +28,7 @@ export function Problem() {
   return (
     <section className="mx-auto max-w-5xl px-6 py-24">
       <BlurFade delay={0.1} inView>
-        <p className="text-sm font-semibold uppercase tracking-widest text-red-500">
+        <p className="text-sm font-semibold uppercase tracking-widest text-gradient">
           {t("label")}
         </p>
       </BlurFade>
@@ -49,7 +49,7 @@ export function Problem() {
         {stats.map((stat, i) => (
           <BlurFade key={i} delay={0.4 + i * 0.1} inView>
             <div className="text-center">
-              <div className="text-4xl font-bold text-red-500">
+              <div className="text-4xl font-bold text-gradient">
                 <NumberTicker value={stat.value} delay={0.5 + i * 0.15} />
                 {stat.suffix}
               </div>

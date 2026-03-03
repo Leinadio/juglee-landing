@@ -123,7 +123,7 @@
   --card-foreground: oklch(0.95 0 0);
   --popover: oklch(0.175 0 0);
   --popover-foreground: oklch(0.95 0 0);
-  --primary: oklch(0.628 0.258 29.234);
+  --primary: oklch(0.66 0.20 22);
   --primary-foreground: oklch(1 0 0);
   --secondary: oklch(0.235 0 0);
   --secondary-foreground: oklch(0.95 0 0);
@@ -134,7 +134,7 @@
   --destructive: oklch(0.704 0.191 22.216);
   --border: oklch(1 0 0 / 10%);
   --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.628 0.258 29.234);
+  --ring: oklch(0.66 0.20 22);
   --chart-1: oklch(0.488 0.243 264.376);
   --chart-2: oklch(0.696 0.17 162.48);
   --chart-3: oklch(0.769 0.188 70.08);
@@ -142,12 +142,12 @@
   --chart-5: oklch(0.645 0.246 16.439);
   --sidebar: oklch(0.175 0 0);
   --sidebar-foreground: oklch(0.95 0 0);
-  --sidebar-primary: oklch(0.628 0.258 29.234);
+  --sidebar-primary: oklch(0.66 0.20 22);
   --sidebar-primary-foreground: oklch(1 0 0);
   --sidebar-accent: oklch(0.235 0 0);
   --sidebar-accent-foreground: oklch(0.95 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.628 0.258 29.234);
+  --sidebar-ring: oklch(0.66 0.20 22);
 }
 
 html {
@@ -160,5 +160,14 @@ html {
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(135deg, #fc4e4e, #d0a0ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 }

@@ -5,10 +5,11 @@ import { AnimatedShinyText } from "@/components/ui/animated-shiny-text";
 import { BlurFade } from "@/components/ui/blur-fade";
 import { Highlighter } from "@/components/ui/highlighter";
 import { Particles } from "@/components/ui/particles";
+import { HeroVideoDialog } from "@/components/ui/hero-video-dialog";
 import { ShimmerButton } from "@/components/ui/shimmer-button";
 import { MonitorSmartphone } from "lucide-react";
 
-const STRIPE_URL = process.env.NEXT_PUBLIC_STRIPE_URL!;
+const DOWNLOAD_URL = "/juglee-extension.zip";
 
 export function Hero() {
   const t = useTranslations("Hero");
@@ -18,7 +19,7 @@ export function Hero() {
       <Particles
         className="absolute inset-0 z-0"
         quantity={60}
-        color="#FF0000"
+        color="#d0a0ff"
         ease={80}
         size={0.6}
       />
@@ -39,7 +40,7 @@ export function Hero() {
               highlight: (chunks) => (
                 <Highlighter
                   action="underline"
-                  color="#FF0000"
+                  color="#fc4e4e"
                   strokeWidth={3}
                   isView
                 >
@@ -49,7 +50,7 @@ export function Hero() {
               mark: (chunks) => (
                 <Highlighter
                   action="highlight"
-                  color="#FF000030"
+                  color="#d0a0ff30"
                   strokeWidth={2}
                   isView
                 >
@@ -68,9 +69,9 @@ export function Hero() {
 
         <BlurFade delay={0.55} inView>
           <div className="mt-10 flex flex-col items-center gap-4">
-            <a href={STRIPE_URL} target="_blank" rel="noopener noreferrer">
+            <a href={DOWNLOAD_URL} download>
               <ShimmerButton
-                background="rgba(220, 0, 0, 1)"
+                background="linear-gradient(135deg, #fc4e4e, #d0a0ff)"
                 shimmerColor="rgba(255, 255, 255, 0.8)"
                 shimmerSize="2px"
                 className="px-8 py-4 shadow-2xl"
@@ -83,6 +84,18 @@ export function Hero() {
             <p className="text-sm text-neutral-400 dark:text-neutral-500">
               {t("ctaSubtext")}
             </p>
+          </div>
+        </BlurFade>
+
+        <BlurFade delay={0.7} inView>
+          <div className="mt-12 w-full max-w-4xl">
+            <HeroVideoDialog
+              animationStyle="from-center"
+              videoSrc="https://www.youtube.com/embed/UCqDHIF19Zs?autoplay=1"
+              thumbnailSrc="/videos/version_2-thumbnail.jpg"
+              thumbnailAlt="Juglee extension demo"
+              className="rounded-xl"
+            />
           </div>
         </BlurFade>
       </div>

@@ -7,7 +7,7 @@ import { CheckCircle } from "lucide-react";
 import { LanguageSwitcher } from "./language-switcher";
 import { ThemeToggle } from "./theme-toggle";
 
-const STRIPE_URL = process.env.NEXT_PUBLIC_STRIPE_URL!;
+const DOWNLOAD_URL = "/juglee-extension.zip";
 
 export function Navbar() {
   const t = useTranslations("Navbar");
@@ -29,15 +29,15 @@ export function Navbar() {
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <a href="#" className="flex items-center gap-2">
-          <CheckCircle className="h-6 w-6 text-red-500" />
+          <CheckCircle className="h-6 w-6 text-[#fc4e4e]" />
           <span className="text-xl font-bold text-neutral-900 dark:text-neutral-50">Juglee</span>
         </a>
         <div className="flex items-center gap-3">
           <ThemeToggle />
           <LanguageSwitcher />
-          <a href={STRIPE_URL} target="_blank" rel="noopener noreferrer">
+          <a href={DOWNLOAD_URL} download>
             <ShimmerButton
-              background="rgba(220, 0, 0, 1)"
+              background="linear-gradient(135deg, #fc4e4e, #d0a0ff)"
               shimmerColor="rgba(255, 255, 255, 0.8)"
               shimmerSize="2px"
               className="px-5 py-2"

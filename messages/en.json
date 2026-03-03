@@ -1,19 +1,19 @@
 {
   "Metadata": {
     "title": "Juglee — Never watch the same video twice",
-    "description": "Juglee marks your YouTube videos as watched with a visible green badge. Chrome extension so you never re-watch a video. $4.99 one-time payment.",
+    "description": "Juglee marks your YouTube videos as watched with a visible green badge. Free Chrome extension so you never re-watch a video.",
     "ogTitle": "Juglee — Chrome Extension for YouTube",
     "ogDescription": "Never watch the same video twice."
   },
   "Navbar": {
-    "cta": "Get Juglee"
+    "cta": "Download Juglee"
   },
   "Hero": {
     "badge": "Chrome Extension for YouTube",
     "title": "Mark <highlight>YouTube videos</highlight> as <mark>watched</mark>, in one click",
     "subtitle": "Juglee marks your YouTube videos as watched with a visible green badge on every thumbnail. Stay in control of your watch history, effortlessly.",
-    "cta": "Get Juglee — $4.99",
-    "ctaSubtext": "One-time payment. No subscription."
+    "cta": "Download for free",
+    "ctaSubtext": "100% free. No account required."
   },
   "Problem": {
     "label": "The problem",
@@ -52,27 +52,33 @@
     "step3Description": "Click the icon to mark a video. The green badge appears on the thumbnail."
   },
   "Pricing": {
-    "badge": "Launch offer",
-    "title": "One simple price, forever",
+    "badge": "Free",
+    "title": "Free, forever",
     "planName": "Juglee",
-    "price": "$4.99",
-    "priceLabel": "/ one-time payment",
-    "cta": "Get Juglee now",
-    "footnote": "Secure payment via Stripe. Instant access after purchase.",
+    "price": "$0",
+    "priceLabel": "/ free forever",
+    "cta": "Download .zip",
+    "footnote": "Compatible with Chrome and Chromium browsers (Edge, Brave, Opera...).",
     "feature1": "Mark your videos as watched",
     "feature2": "Green badge on thumbnails",
     "feature3": "Export and import as JSON",
     "feature4": "Works across all of YouTube",
     "feature5": "Automatic storage cleanup",
     "feature6": "Free updates",
-    "feature7": "Email support"
+    "feature7": "Email support",
+    "installTitle": "How to install the extension",
+    "installStep1": "Unzip the downloaded .zip file",
+    "installStep2": "Open <code>chrome://extensions</code> in Chrome",
+    "installStep3": "Enable <bold>Developer mode</bold> in the top right",
+    "installStep4": "Click <bold>Load unpacked</bold>",
+    "installStep5": "Select the unzipped folder"
   },
   "FAQ": {
     "title": "Frequently asked questions",
     "q1": "How does Juglee work?",
     "a1": "Juglee is a Chrome extension that integrates directly into YouTube. Once installed, it lets you manually mark videos as watched. A green badge then appears on the thumbnails of marked videos, everywhere on YouTube.",
-    "q2": "Is it a subscription?",
-    "a2": "No. Juglee costs $4.99 as a one-time payment. You pay once and get access to the extension forever, updates included.",
+    "q2": "Is it really free?",
+    "a2": "Yes. Juglee is 100% free and always will be. No subscription, no hidden fees. Install the extension and use it without limits.",
     "q3": "Is my data secure?",
     "a3": "Yes. All your data is stored locally in your browser via chrome.storage.local. No data is sent to any external server. You can also export your data as JSON at any time.",
     "q4": "What happens if I have too many marked videos?",

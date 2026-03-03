@@ -30,7 +30,7 @@ export function FAQ() {
               value={`item-${n}`}
               className="border-neutral-200 dark:border-neutral-800"
             >
-              <AccordionTrigger className="text-left text-neutral-900 dark:text-neutral-50 hover:text-red-500">
+              <AccordionTrigger className="text-left text-neutral-900 dark:text-neutral-50 hover:text-[#fc4e4e]">
                 {t(`q${n}`)}
               </AccordionTrigger>
               <AccordionContent className="text-neutral-500 dark:text-neutral-400">

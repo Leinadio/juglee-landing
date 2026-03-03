@@ -2,21 +2,16 @@
 
 import { useTranslations } from "next-intl";
 import { BlurFade } from "@/components/ui/blur-fade";
-import { BorderBeam } from "@/components/ui/border-beam";
 import { ShimmerButton } from "@/components/ui/shimmer-button";
-import { AnimatedShinyText } from "@/components/ui/animated-shiny-text";
-import { Check } from "lucide-react";
 
-const STRIPE_URL = process.env.NEXT_PUBLIC_STRIPE_URL!;
+const DOWNLOAD_URL = "/juglee-extension.zip";
 
-const featureKeys = [
-  "feature1",
-  "feature2",
-  "feature3",
-  "feature4",
-  "feature5",
-  "feature6",
-  "feature7",
+const installStepKeys = [
+  "installStep1",
+  "installStep2",
+  "installStep3",
+  "installStep4",
+  "installStep5",
 ] as const;
 
 export function Pricing() {
@@ -28,52 +23,42 @@ export function Pricing() {
       className="mx-auto flex max-w-5xl flex-col items-center px-6 py-24"
     >
       <BlurFade delay={0.1} inView>
-        <div className="mb-8 inline-flex items-center rounded-full border border-neutral-200 dark:border-neutral-800 bg-neutral-100 dark:bg-neutral-900/50 px-4 py-1.5">
-          <AnimatedShinyText className="text-sm">
-            {t("badge")}
-          </AnimatedShinyText>
-        </div>
-      </BlurFade>
-
-      <BlurFade delay={0.2} inView>
         <h2 className="text-center text-3xl font-bold tracking-tight text-neutral-900 dark:text-neutral-50 md:text-5xl">
-          {t("title")}
+          {t("installTitle")}
         </h2>
       </BlurFade>
 
-      <BlurFade delay={0.3} inView>
-        <div className="relative mt-12 w-full max-w-md overflow-hidden rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-neutral-100 dark:bg-neutral-900/50 p-8">
-          <BorderBeam
-            colorFrom="#FF0000"
-            colorTo="#FF4E45"
-            size={80}
-            duration={8}
-            borderWidth={2}
-          />
-
-          <h3 className="text-2xl font-bold text-neutral-900 dark:text-neutral-50">{t("planName")}</h3>
-          <div className="mt-4 flex items-baseline gap-2">
-            <span className="text-5xl font-bold text-neutral-900 dark:text-neutral-50">{t("price")}</span>
-            <span className="text-neutral-500 dark:text-neutral-400">{t("priceLabel")}</span>
-          </div>
-
-          <ul className="mt-8 space-y-4">
-            {featureKeys.map((key) => (
-              <li key={key} className="flex items-center gap-3">
-                <Check className="h-5 w-5 shrink-0 text-red-500" />
-                <span className="text-neutral-600 dark:text-neutral-300">{t(key)}</span>
+      <BlurFade delay={0.2} inView>
+        <div className="mt-12 w-full max-w-md rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-neutral-100 dark:bg-neutral-900/50 p-8">
+          <ol className="space-y-4 text-sm text-neutral-500 dark:text-neutral-400">
+            {installStepKeys.map((key, i) => (
+              <li key={key} className="flex items-start gap-3">
+                <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#fc4e4e]/10 text-xs font-bold text-[#fc4e4e]">
+                  {i + 1}
+                </span>
+                <span>
+                  {t.rich(key, {
+                    code: (chunks) => (
+                      <code className="rounded bg-neutral-200 px-1.5 py-0.5 font-mono text-xs text-neutral-900 dark:bg-neutral-800 dark:text-neutral-200">
+                        {chunks}
+                      </code>
+                    ),
+                    bold: (chunks) => (
+                      <span className="font-semibold text-neutral-900 dark:text-neutral-50">{chunks}</span>
+                    ),
+                  })}
+                </span>
               </li>
             ))}
-          </ul>
+          </ol>
 
           <a
-            href={STRIPE_URL}
-            target="_blank"
-            rel="noopener noreferrer"
+            href={DOWNLOAD_URL}
+            download
             className="mt-8 block"
           >
             <ShimmerButton
-              background="rgba(220, 0, 0, 1)"
+              background="linear-gradient(135deg, #fc4e4e, #d0a0ff)"
               shimmerColor="rgba(255, 255, 255, 0.8)"
               shimmerSize="2px"
               className="w-full py-4 shadow-2xl"

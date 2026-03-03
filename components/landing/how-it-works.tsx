@@ -20,7 +20,7 @@ export function HowItWorks() {
   return (
     <section className="mx-auto max-w-5xl px-6 py-24">
       <BlurFade delay={0.1} inView>
-        <p className="text-center text-sm font-semibold uppercase tracking-widest text-red-500">
+        <p className="text-center text-sm font-semibold uppercase tracking-widest text-gradient">
           {t("label")}
         </p>
       </BlurFade>
@@ -39,11 +39,11 @@ export function HowItWorks() {
           <BlurFade key={step.number} delay={0.3 + i * 0.15} inView>
             <div className="flex flex-col items-center text-center">
               <div className="relative flex h-32 w-32 items-center justify-center">
-                <span className="absolute -top-2 text-7xl font-bold text-red-500/5 dark:text-red-500/10">
+                <span className="absolute -top-2 text-7xl font-bold text-[#d0a0ff]/10">
                   {step.number}
                 </span>
                 <div className="relative z-10 flex h-14 w-14 items-center justify-center rounded-full border border-neutral-200 dark:border-neutral-800 bg-neutral-100 dark:bg-neutral-900">
-                  <step.icon className="h-6 w-6 text-red-500" />
+                  <step.icon className="h-6 w-6 text-[#fc4e4e]" />
                 </div>
               </div>
               <h3 className="mt-4 text-xl font-semibold text-neutral-900 dark:text-neutral-50">

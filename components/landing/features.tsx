@@ -5,7 +5,7 @@ import { BlurFade } from "@/components/ui/blur-fade";
 import { BentoGrid, BentoCard } from "@/components/ui/bento-grid";
 import { CheckCircle, Eye, Download, Globe } from "lucide-react";
 
-const STRIPE_URL = process.env.NEXT_PUBLIC_STRIPE_URL!;
+const DOWNLOAD_URL = "/juglee-extension.zip";
 
 const features = [
   {
@@ -40,7 +40,7 @@ export function Features() {
   return (
     <section className="mx-auto max-w-5xl px-6 py-24">
       <BlurFade delay={0.1} inView>
-        <p className="text-center text-sm font-semibold uppercase tracking-widest text-red-500">
+        <p className="text-center text-sm font-semibold uppercase tracking-widest text-gradient">
           {t("label")}
         </p>
       </BlurFade>
@@ -61,9 +61,9 @@ export function Features() {
               Icon={feature.Icon}
               className={feature.className}
               background={
-                <div className="absolute inset-0 bg-gradient-to-br from-red-500/5 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-br from-[#fc4e4e]/8 to-[#d0a0ff]/8" />
               }
-              href={STRIPE_URL}
+              href={DOWNLOAD_URL}
               cta={t("label")}
             />
           ))}

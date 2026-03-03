@@ -13,7 +13,7 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.575.0",
-    "motion": "^12.34.3",
+    "motion": "^12.34.4",
     "nanoid": "^3.3.11",
     "next": "16.1.6",
     "next-intl": "^4.8.3",
