@@ -84,7 +84,7 @@ export function Hero() {
               animationStyle="from-center"
               videoSrc="https://www.youtube.com/embed/UCqDHIF19Zs?autoplay=1"
               thumbnailSrc="/videos/version_2-thumbnail.jpg"
-              thumbnailAlt="Juglee extension demo"
+              thumbnailAlt="Jugleey extension demo"
               className="rounded-xl"
             />
           </div>

@@ -1,17 +1,17 @@
 {
   "Metadata": {
-    "title": "Juglee — Mark YouTube videos as watched",
-    "description": "Juglee marks your YouTube videos as watched with a visible badge. Free Chrome extension so you never re-watch a video.",
-    "ogTitle": "Juglee — Chrome Extension for YouTube",
+    "title": "Jugleey — Mark YouTube videos as watched",
+    "description": "Jugleey marks your YouTube videos as watched with a visible badge. Free Chrome extension so you never re-watch a video.",
+    "ogTitle": "Jugleey — Chrome Extension for YouTube",
     "ogDescription": "Never watch the same video twice."
   },
   "Navbar": {
-    "cta": "Download Juglee"
+    "cta": "Download Jugleey"
   },
   "Hero": {
     "badge": "Chrome Extension for YouTube",
     "title": "Mark <highlight>YouTube videos</highlight> as <mark>watched</mark>, in one click",
-    "subtitle": "Juglee displays a badge on thumbnails of videos you've already watched. Spot them at a glance before you click.",
+    "subtitle": "Jugleey displays a badge on thumbnails of videos you've already watched. Spot them at a glance before you click.",
     "cta": "Download for free",
     "ctaSubtext": "100% free. No account required."
   },
@@ -45,16 +45,16 @@
     "label": "No setup needed",
     "title": "How it works",
     "step1Title": "Install the extension",
-    "step1Description": "Add Juglee to Chrome in one click. No setup required.",
+    "step1Description": "Add Jugleey to Chrome in one click. No setup required.",
     "step2Title": "Browse YouTube",
-    "step2Description": "Browse YouTube as usual. Juglee works in the background.",
+    "step2Description": "Browse YouTube as usual. Jugleey works in the background.",
     "step3Title": "Mark and spot",
     "step3Description": "Click the icon to mark a video. The badge appears on the thumbnail."
   },
   "Pricing": {
     "badge": "Free",
     "title": "Free, forever",
-    "planName": "Juglee",
+    "planName": "Jugleey",
     "price": "$0",
     "priceLabel": "/ free forever",
     "cta": "Download .zip",
@@ -67,30 +67,30 @@
     "feature6": "Free updates",
     "feature7": "Email support",
     "installTitle": "How to install the extension",
-    "installNote": "Juglee is not yet available on the Chrome Web Store. You can install it manually in a few steps using Chrome's developer mode.",
+    "installNote": "Jugleey is not yet available on the Chrome Web Store. You can install it manually in a few steps using Chrome's developer mode.",
     "installStep1": "Click the button below to download the <bold>.zip file</bold>",
     "installStep2": "Unzip the downloaded file to a folder on your computer",
     "installStep3": "In Chrome, type <code>chrome://extensions</code> in the address bar and press Enter",
     "installStep4": "Enable the <bold>Developer mode</bold> toggle in the top right corner of the page",
     "installStep5": "Click the <bold>Load unpacked</bold> button that appears in the top left",
-    "installStep6": "Select the unzipped folder — the Juglee icon will appear in your browser toolbar"
+    "installStep6": "Select the unzipped folder — the Jugleey icon will appear in your browser toolbar"
   },
   "FAQ": {
     "title": "Frequently asked questions",
-    "q1": "How does Juglee work?",
-    "a1": "Juglee is a Chrome extension that integrates directly into YouTube. Once installed, it lets you manually mark videos as watched. A badge then appears on the thumbnails of marked videos, everywhere on YouTube.",
+    "q1": "How does Jugleey work?",
+    "a1": "Jugleey is a Chrome extension that integrates directly into YouTube. Once installed, it lets you manually mark videos as watched. A badge then appears on the thumbnails of marked videos, everywhere on YouTube.",
     "q2": "Is it really free?",
-    "a2": "Yes. Juglee is 100% free and always will be. No subscription, no hidden fees. Install the extension and use it without limits.",
+    "a2": "Yes. Jugleey is 100% free and always will be. No subscription, no hidden fees. Install the extension and use it without limits.",
     "q3": "Is my data secure?",
     "a3": "Yes. All your data is stored locally in your browser via chrome.storage.local. No data is sent to any external server. You can also export your data as JSON at any time.",
     "q4": "What happens if I have too many marked videos?",
-    "a4": "Juglee includes an automatic cleanup system. When storage reaches 9 MB, the oldest videos are automatically removed to free up space.",
+    "a4": "Jugleey includes an automatic cleanup system. When storage reaches 9 MB, the oldest videos are automatically removed to free up space.",
     "q5": "Does the extension work on Firefox or Safari?",
-    "a5": "For now, Juglee is available only on Google Chrome and Chromium-based browsers like Edge, Brave, Opera, etc. A Firefox version may be considered in the future.",
+    "a5": "For now, Jugleey is available only on Google Chrome and Chromium-based browsers like Edge, Brave, Opera, etc. A Firefox version may be considered in the future.",
     "q6": "How can I get help?",
     "a6": "You can reach us by email for any question or issue. We typically respond within 24 hours."
   },
   "Footer": {
-    "copyright": "© 2026 Juglee. All rights reserved."
+    "copyright": "© 2026 Jugleey. All rights reserved."
   }
 }

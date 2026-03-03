@@ -29,8 +29,8 @@ export function Navbar() {
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <a href="#" className="flex items-center gap-2">
-          <Image src="/images/icon.png" alt="Juglee" width={24} height={24} />
-          <span className="text-xl font-bold text-neutral-900 dark:text-neutral-50">Juglee</span>
+          <Image src="/images/icon.png" alt="Jugleey" width={24} height={24} />
+          <span className="text-xl font-bold text-neutral-900 dark:text-neutral-50">Jugleey</span>
         </a>
 
         <div className="flex items-center gap-3">
