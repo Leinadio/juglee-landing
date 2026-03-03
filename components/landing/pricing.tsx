@@ -30,29 +30,29 @@ export function Pricing() {
       </BlurFade>
 
       <BlurFade delay={0.15} inView>
-        <p className="mt-4 max-w-xl text-center text-base leading-relaxed text-neutral-500 dark:text-neutral-400">
+        <p className="mt-4 max-w-2xl text-center text-lg leading-relaxed text-neutral-500 dark:text-neutral-400">
           {t("installNote")}
         </p>
       </BlurFade>
 
       <div className="relative mt-12 w-full max-w-lg">
         {/* Ligne connectrice verticale */}
-        <div className="absolute left-[15px] top-0 bottom-0 w-px bg-neutral-200 dark:bg-neutral-800" />
+        <div className="absolute left-[19px] top-0 bottom-0 w-px bg-neutral-200 dark:bg-neutral-800" />
 
         <ol className="relative space-y-8">
           {installStepKeys.map((key, i) => (
             <BlurFade key={key} delay={0.2 + i * 0.08} inView>
               <li className="flex items-start gap-4">
                 {/* Cercle numéroté */}
-                <span className="relative z-10 flex h-8 w-8 shrink-0 items-center justify-center rounded-full border-2 border-[#fc4e4e]/30 bg-neutral-50 text-sm font-bold text-[#fc4e4e] dark:bg-neutral-950">
+                <span className="relative z-10 flex h-10 w-10 shrink-0 items-center justify-center rounded-full border-2 border-[#fc4e4e]/30 bg-neutral-50 text-base font-bold text-[#fc4e4e] dark:bg-neutral-950">
                   {i + 1}
                 </span>
 
                 {/* Texte de l'étape */}
-                <p className="pt-1 text-sm leading-relaxed text-neutral-500 dark:text-neutral-400">
+                <p className="pt-1.5 text-base leading-relaxed text-neutral-500 dark:text-neutral-400">
                   {t.rich(key, {
                     code: (chunks) => (
-                      <code className="rounded bg-neutral-200 px-1.5 py-0.5 font-mono text-xs text-neutral-900 dark:bg-neutral-800 dark:text-neutral-200">
+                      <code className="rounded bg-neutral-200 px-1.5 py-0.5 font-mono text-sm text-neutral-900 dark:bg-neutral-800 dark:text-neutral-200">
                         {chunks}
                       </code>
                     ),
@@ -81,7 +81,7 @@ export function Pricing() {
               </span>
             </ShimmerButton>
           </a>
-          <p className="text-xs text-neutral-400 dark:text-neutral-500">
+          <p className="text-sm text-neutral-400 dark:text-neutral-500">
             {t("footnote")}
           </p>
         </div>

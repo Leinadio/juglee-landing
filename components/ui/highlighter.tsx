@@ -96,7 +96,7 @@ export function Highlighter({
   ])
 
   return (
-    <span ref={elementRef} className="relative inline-block bg-transparent [&>svg]:!-z-10">
+    <span ref={elementRef} className="relative inline-block w-max bg-transparent [&>svg]:!-z-10">
       <span className="relative z-10">{children}</span>
     </span>
   )
