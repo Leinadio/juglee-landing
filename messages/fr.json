@@ -87,8 +87,10 @@
     "a4": "Jugleey inclut un système de nettoyage automatique. Quand le stockage atteint 9 Mo, les vidéos les plus anciennes sont automatiquement supprimées pour libérer de l'espace.",
     "q5": "L'extension fonctionne-t-elle sur Firefox ou Safari ?",
     "a5": "Pour le moment, Jugleey est disponible uniquement sur Google Chrome et les navigateurs basés sur Chromium comme Edge, Brave, Opera, etc. Une version Firefox pourra être envisagée à l'avenir.",
-    "q6": "Comment obtenir de l'aide ?",
-    "a6": "Vous pouvez nous contacter par email pour toute question ou problème. Nous répondons généralement sous 24 heures."
+    "q6": "Jugleey fonctionne-t-il sur mobile ?",
+    "a6": "Non, Jugleey n'est pas disponible sur mobile pour le moment. Les extensions Chrome ne sont pas supportées sur les navigateurs mobiles. Jugleey fonctionne uniquement sur ordinateur (Chrome, Edge, Brave, Opera...).",
+    "q7": "Comment obtenir de l'aide ?",
+    "a7": "Vous pouvez nous contacter par email pour toute question ou problème. Nous répondons généralement sous 24 heures."
   },
   "About": {
     "name": "Salut, c'est Daniel",

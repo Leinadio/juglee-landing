@@ -25,7 +25,7 @@ export default async function Home({
   const faqJsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: [1, 2, 3, 4, 5, 6].map((n) => ({
+    mainEntity: [1, 2, 3, 4, 5, 6, 7].map((n) => ({
       "@type": "Question",
       name: tFaq(`q${n}`),
       acceptedAnswer: {

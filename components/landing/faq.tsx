@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/accordion";
 import { BlurFade } from "@/components/ui/blur-fade";
 
-const faqKeys = [1, 2, 3, 4, 5, 6] as const;
+const faqKeys = [1, 2, 3, 4, 5, 6, 7] as const;
 
 export function FAQ() {
   const t = useTranslations("FAQ");
