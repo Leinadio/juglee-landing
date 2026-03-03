@@ -72,15 +72,10 @@ export function TestimonialWidget() {
     <div ref={containerRef} className="relative">
       <button
         onClick={() => setOpen(!open)}
-        className={cn(
-          "flex items-center justify-center rounded-full p-2 transition-colors",
-          "text-neutral-500 dark:text-neutral-400",
-          "hover:bg-neutral-100 dark:hover:bg-neutral-800 hover:text-neutral-700 dark:hover:text-neutral-200",
-          open && "bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-200"
-        )}
+        className="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-br from-amber-400 to-orange-500 text-white shadow-sm transition-transform hover:scale-110"
         aria-label={t("triggerLabel")}
       >
-        <MessageSquareHeart className="h-5 w-5" />
+        <MessageSquareHeart className="h-4 w-4" />
       </button>
 
       <AnimatePresence>
@@ -135,6 +130,7 @@ export function TestimonialWidget() {
                 <form onSubmit={handleSubmit} className="mt-4 space-y-3">
                   <input
                     type="text"
+                    required
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     placeholder={t("namePlaceholder")}
@@ -152,7 +148,7 @@ export function TestimonialWidget() {
                     onChange={(e) => setMessage(e.target.value)}
                     placeholder={t("messagePlaceholder")}
                     rows={3}
-                    className={cn(inputClasses, "resize-none")}
+                    className={cn(inputClasses, "resize-y")}
                   />
                   {status === "error" && (
                     <p className="text-xs text-red-500 dark:text-red-400">
@@ -161,7 +157,7 @@ export function TestimonialWidget() {
                   )}
                   <ShimmerButton
                     type="submit"
-                    disabled={status === "loading" || !message.trim()}
+                    disabled={status === "loading" || !name.trim() || !message.trim()}
                     background="linear-gradient(135deg, #fc4e4e, #d0a0ff)"
                     shimmerColor="rgba(255, 255, 255, 0.8)"
                     shimmerSize="2px"

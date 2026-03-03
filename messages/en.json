@@ -102,9 +102,9 @@
   },
   "Testimonial": {
     "title": "We'd love to hear from you!",
-    "subtitle": "Using Jugleey? Tell us what you think — it would truly make our day!",
+    "subtitle": "Using Jugleey? Tell us what you think. It would make our day!",
     "consent": "Your message may be shared here to inspire other users.",
-    "namePlaceholder": "Your name (optional)",
+    "namePlaceholder": "Your name",
     "emailPlaceholder": "Your email (optional)",
     "messagePlaceholder": "Tell us about your experience with Jugleey...",
     "submit": "Share my feedback",
