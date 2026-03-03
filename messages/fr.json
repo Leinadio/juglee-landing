@@ -1,6 +1,6 @@
 {
   "Metadata": {
-    "title": "Juglee — Ne regarde plus jamais la même vidéo deux fois",
+    "title": "Juglee — Marquez vos vidéos YouTube comme vues",
     "description": "Juglee marque vos vidéos YouTube comme vues avec un badge visible. Extension Chrome gratuite pour ne plus jamais revoir une vidéo.",
     "ogTitle": "Juglee — Extension Chrome pour YouTube",
     "ogDescription": "Ne regarde plus jamais la même vidéo deux fois."
@@ -92,24 +92,5 @@
   },
   "Footer": {
     "copyright": "© 2026 Juglee. Tous droits réservés."
-  },
-  "Download": {
-    "title": "Télécharger Juglee",
-    "subtitle": "Entrez votre clé de licence pour télécharger l'extension.",
-    "label": "Clé de licence",
-    "verify": "Vérifier la clé",
-    "verifying": "Vérification...",
-    "successTitle": "Clé vérifiée !",
-    "successDescription": "Votre clé de licence est valide. Cliquez ci-dessous pour télécharger l'extension.",
-    "downloadButton": "Télécharger l'extension Juglee",
-    "errorTitle": "Clé invalide",
-    "errorDescription": "Cette clé de licence n'a pas été trouvée. Vérifiez votre email et réessayez.",
-    "installTitle": "Comment installer l'extension",
-    "installStep1": "Décompressez le fichier .zip téléchargé dans un dossier sur votre ordinateur",
-    "installStep2": "Dans Chrome, tapez chrome://extensions dans la barre d'adresse et appuyez sur Entrée",
-    "installStep3": "Activez le bouton \"Mode développeur\" en haut à droite de la page",
-    "installStep4": "Cliquez sur \"Charger l'extension non empaquetée\" en haut à gauche",
-    "installStep5": "Sélectionnez le dossier décompressé",
-    "installStep6": "C'est fait ! L'icône Juglee apparaît dans votre barre d'outils"
   }
 }

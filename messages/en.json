@@ -1,6 +1,6 @@
 {
   "Metadata": {
-    "title": "Juglee — Never watch the same video twice",
+    "title": "Juglee — Mark YouTube videos as watched",
     "description": "Juglee marks your YouTube videos as watched with a visible badge. Free Chrome extension so you never re-watch a video.",
     "ogTitle": "Juglee — Chrome Extension for YouTube",
     "ogDescription": "Never watch the same video twice."
@@ -92,24 +92,5 @@
   },
   "Footer": {
     "copyright": "© 2026 Juglee. All rights reserved."
-  },
-  "Download": {
-    "title": "Download Juglee",
-    "subtitle": "Enter your license key to download the extension.",
-    "label": "License Key",
-    "verify": "Verify Key",
-    "verifying": "Verifying...",
-    "successTitle": "Key verified!",
-    "successDescription": "Your license key is valid. Click below to download the extension.",
-    "downloadButton": "Download Juglee Extension",
-    "errorTitle": "Invalid key",
-    "errorDescription": "This license key was not found. Please check your email and try again.",
-    "installTitle": "How to install the extension",
-    "installStep1": "Unzip the downloaded .zip file to a folder on your computer",
-    "installStep2": "In Chrome, type chrome://extensions in the address bar and press Enter",
-    "installStep3": "Enable the \"Developer mode\" toggle in the top right corner",
-    "installStep4": "Click \"Load unpacked\" in the top left",
-    "installStep5": "Select the unzipped folder",
-    "installStep6": "Done! The Juglee icon appears in your toolbar"
   }
 }
