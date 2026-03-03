@@ -90,6 +90,13 @@
     "q6": "Comment obtenir de l'aide ?",
     "a6": "Vous pouvez nous contacter par email pour toute question ou problème. Nous répondons généralement sous 24 heures."
   },
+  "About": {
+    "name": "Salut, c'est Daniel",
+    "bio": "Développeur indie et créateur de produits.",
+    "bio2": "Je construis des outils qui résolvent des problèmes concrets du quotidien.",
+    "story": "J'ai créé Jugleey parce que j'en avais marre de retomber sur des vidéos YouTube déjà vues, alors j'ai construit la mienne et je l'ai rendue gratuite pour que tout le monde en profite.",
+    "cta": "@leinadiotech sur X"
+  },
   "Footer": {
     "copyright": "© 2026 Jugleey. Tous droits réservés."
   }

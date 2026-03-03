@@ -5,6 +5,7 @@ import { Features } from "@/components/landing/features";
 import { HowItWorks } from "@/components/landing/how-it-works";
 import { Pricing } from "@/components/landing/pricing";
 import { FAQ } from "@/components/landing/faq";
+import { About } from "@/components/landing/about";
 import { Footer } from "@/components/landing/footer";
 import { Particles } from "@/components/ui/particles";
 import { ScrollProgress } from "@/components/ui/scroll-progress";
@@ -27,6 +28,7 @@ export default function Home() {
       <HowItWorks />
       <Pricing />
       <FAQ />
+      <About />
       <Footer />
     </div>
   );
