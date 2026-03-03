@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Juglee — Never watch the same video twice",
-    "description": "Juglee marks your YouTube videos as watched with a visible green badge. Free Chrome extension so you never re-watch a video.",
+    "description": "Juglee marks your YouTube videos as watched with a visible badge. Free Chrome extension so you never re-watch a video.",
     "ogTitle": "Juglee — Chrome Extension for YouTube",
     "ogDescription": "Never watch the same video twice."
   },
@@ -11,7 +11,7 @@
   "Hero": {
     "badge": "Chrome Extension for YouTube",
     "title": "Mark <highlight>YouTube videos</highlight> as <mark>watched</mark>, in one click",
-    "subtitle": "Juglee marks your YouTube videos as watched with a visible green badge on every thumbnail. Stay in control of your watch history, effortlessly.",
+    "subtitle": "Juglee displays a badge on thumbnails of videos you've already watched. Spot them at a glance before you click.",
     "cta": "Download for free",
     "ctaSubtext": "100% free. No account required."
   },
@@ -33,9 +33,9 @@
     "label": "Features",
     "title": "Everything you need",
     "feature1Title": "Mark your videos as watched",
-    "feature1Description": "A single click to mark a video as watched. The green icon appears instantly on the thumbnail.",
-    "feature2Title": "Green badge on every thumbnail",
-    "feature2Description": "Spot already-watched videos at a glance thanks to the green badge displayed directly on YouTube.",
+    "feature1Description": "A single click to mark a video as watched. The icon appears instantly on the thumbnail.",
+    "feature2Title": "A badge on every thumbnail",
+    "feature2Description": "Spot already-watched videos at a glance thanks to the badge displayed directly on YouTube.",
     "feature3Title": "Export and import your data",
     "feature3Description": "Back up your watch history as JSON and restore it anytime. Your data belongs to you.",
     "feature4Title": "Works across all of YouTube",
@@ -49,7 +49,7 @@
     "step2Title": "Browse YouTube",
     "step2Description": "Browse YouTube as usual. Juglee works in the background.",
     "step3Title": "Mark and spot",
-    "step3Description": "Click the icon to mark a video. The green badge appears on the thumbnail."
+    "step3Description": "Click the icon to mark a video. The badge appears on the thumbnail."
   },
   "Pricing": {
     "badge": "Free",
@@ -60,7 +60,7 @@
     "cta": "Download .zip",
     "footnote": "Compatible with Chrome and Chromium browsers (Edge, Brave, Opera...).",
     "feature1": "Mark your videos as watched",
-    "feature2": "Green badge on thumbnails",
+    "feature2": "A badge on thumbnails",
     "feature3": "Export and import as JSON",
     "feature4": "Works across all of YouTube",
     "feature5": "Automatic storage cleanup",
@@ -76,7 +76,7 @@
   "FAQ": {
     "title": "Frequently asked questions",
     "q1": "How does Juglee work?",
-    "a1": "Juglee is a Chrome extension that integrates directly into YouTube. Once installed, it lets you manually mark videos as watched. A green badge then appears on the thumbnails of marked videos, everywhere on YouTube.",
+    "a1": "Juglee is a Chrome extension that integrates directly into YouTube. Once installed, it lets you manually mark videos as watched. A badge then appears on the thumbnails of marked videos, everywhere on YouTube.",
     "q2": "Is it really free?",
     "a2": "Yes. Juglee is 100% free and always will be. No subscription, no hidden fees. Install the extension and use it without limits.",
     "q3": "Is my data secure?",

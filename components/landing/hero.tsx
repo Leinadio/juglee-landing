@@ -4,7 +4,6 @@ import { useTranslations } from "next-intl";
 import { AnimatedShinyText } from "@/components/ui/animated-shiny-text";
 import { BlurFade } from "@/components/ui/blur-fade";
 import { Highlighter } from "@/components/ui/highlighter";
-import { Particles } from "@/components/ui/particles";
 import { HeroVideoDialog } from "@/components/ui/hero-video-dialog";
 import { ShimmerButton } from "@/components/ui/shimmer-button";
 import { MonitorSmartphone } from "lucide-react";
@@ -16,14 +15,6 @@ export function Hero() {
 
   return (
     <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-6 pt-24">
-      <Particles
-        className="absolute inset-0 z-0"
-        quantity={60}
-        color="#d0a0ff"
-        ease={80}
-        size={0.6}
-      />
-
       <div className="relative z-10 flex flex-col items-center text-center">
         <BlurFade delay={0.1} inView>
           <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-neutral-200 dark:border-neutral-800 bg-neutral-100 dark:bg-neutral-900/50 px-4 py-1.5">
