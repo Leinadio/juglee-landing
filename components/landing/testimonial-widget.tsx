@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import { useTranslations } from "next-intl";
+import posthog from "posthog-js";
 import { motion, AnimatePresence } from "motion/react";
 import { ShimmerButton } from "@/components/ui/shimmer-button";
 import { ShineBorder } from "@/components/ui/shine-border";
@@ -49,6 +50,7 @@ export function TestimonialWidget() {
       });
       if (!res.ok) throw new Error();
       setStatus("success");
+      posthog.capture("testimonial_submitted");
       setTimeout(() => {
         setOpen(false);
         setName("");
@@ -71,7 +73,7 @@ export function TestimonialWidget() {
   return (
     <div ref={containerRef} className="relative">
       <button
-        onClick={() => setOpen(!open)}
+        onClick={() => { if (!open) posthog.capture("testimonial_widget_opened"); setOpen(!open); }}
         className="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-br from-amber-400 to-orange-500 text-white shadow-sm transition-transform hover:scale-110"
         aria-label={t("triggerLabel")}
       >

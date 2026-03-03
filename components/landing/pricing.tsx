@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import posthog from "posthog-js";
 import { BlurFade } from "@/components/ui/blur-fade";
 import { ShimmerButton } from "@/components/ui/shimmer-button";
 
@@ -69,7 +70,7 @@ export function Pricing() {
 
       <BlurFade delay={0.7} inView>
         <div className="mt-10 flex flex-col items-center gap-4">
-          <a href={DOWNLOAD_URL} download>
+          <a href={DOWNLOAD_URL} download onClick={() => posthog.capture("download_click", { location: "pricing" })}>
             <ShimmerButton
               background="linear-gradient(135deg, #fc4e4e, #d0a0ff)"
               shimmerColor="rgba(255, 255, 255, 0.8)"

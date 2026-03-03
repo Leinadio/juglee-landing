@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import posthog from "posthog-js";
 import {
   Accordion,
   AccordionContent,
@@ -23,7 +24,7 @@ export function FAQ() {
       </BlurFade>
 
       <BlurFade delay={0.2} inView>
-        <Accordion type="single" collapsible className="mt-12">
+        <Accordion type="single" collapsible className="mt-12" onValueChange={(value) => { if (value) posthog.capture("faq_opened", { question: value }); }}>
           {faqKeys.map((n) => (
             <AccordionItem
               key={n}

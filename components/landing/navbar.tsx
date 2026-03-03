@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
+import posthog from "posthog-js";
 import { ShimmerButton } from "@/components/ui/shimmer-button";
 import Image from "next/image";
 import { LanguageSwitcher } from "./language-switcher";
@@ -38,7 +39,7 @@ export function Navbar() {
           <ThemeToggle />
           <LanguageSwitcher />
           <TestimonialWidget />
-          <a href={DOWNLOAD_URL} download className="hidden md:block">
+          <a href={DOWNLOAD_URL} download className="hidden md:block" onClick={() => posthog.capture("download_click", { location: "navbar" })}>
             <ShimmerButton
               background="linear-gradient(135deg, #fc4e4e, #d0a0ff)"
               shimmerColor="rgba(255, 255, 255, 0.8)"

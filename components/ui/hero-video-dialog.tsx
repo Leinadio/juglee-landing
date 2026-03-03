@@ -22,6 +22,7 @@ interface HeroVideoProps {
   thumbnailSrc: string
   thumbnailAlt?: string
   className?: string
+  onPlay?: () => void
 }
 
 const animationVariants = {
@@ -73,6 +74,7 @@ export function HeroVideoDialog({
   thumbnailSrc,
   thumbnailAlt = "Video thumbnail",
   className,
+  onPlay,
 }: HeroVideoProps) {
   const [isVideoOpen, setIsVideoOpen] = useState(false)
   const selectedAnimation = animationVariants[animationStyle]
@@ -83,7 +85,7 @@ export function HeroVideoDialog({
         type="button"
         aria-label="Play video"
         className="group relative cursor-pointer border-0 bg-transparent p-0"
-        onClick={() => setIsVideoOpen(true)}
+        onClick={() => { setIsVideoOpen(true); onPlay?.(); }}
       >
         <img
           src={thumbnailSrc}
