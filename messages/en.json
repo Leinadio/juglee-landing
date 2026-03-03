@@ -99,5 +99,17 @@
   },
   "Footer": {
     "copyright": "© 2026 Jugleey. All rights reserved."
+  },
+  "Testimonial": {
+    "title": "We'd love to hear from you!",
+    "subtitle": "Using Jugleey? Tell us what you think — it would truly make our day!",
+    "consent": "Your message may be shared here to inspire other users.",
+    "namePlaceholder": "Your name (optional)",
+    "emailPlaceholder": "Your email (optional)",
+    "messagePlaceholder": "Tell us about your experience with Jugleey...",
+    "submit": "Share my feedback",
+    "thankYou": "Thank you so much! Your kind words mean the world to us and keep us going.",
+    "error": "Oops, something went wrong. Want to try again?",
+    "triggerLabel": "Leave a testimonial"
   }
 }

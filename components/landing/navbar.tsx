@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import { ShimmerButton } from "@/components/ui/shimmer-button";
 import Image from "next/image";
 import { LanguageSwitcher } from "./language-switcher";
+import { TestimonialWidget } from "./testimonial-widget";
 import { ThemeToggle } from "./theme-toggle";
 
 const DOWNLOAD_URL = "/juglee-extension.zip";
@@ -36,6 +37,7 @@ export function Navbar() {
         <div className="flex items-center gap-3">
           <ThemeToggle />
           <LanguageSwitcher />
+          <TestimonialWidget />
           <a href={DOWNLOAD_URL} download className="hidden md:block">
             <ShimmerButton
               background="linear-gradient(135deg, #fc4e4e, #d0a0ff)"
