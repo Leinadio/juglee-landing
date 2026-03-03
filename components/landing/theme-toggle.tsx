@@ -12,7 +12,7 @@ export function ThemeToggle() {
 
   if (!mounted) {
     return (
-      <button className="flex h-8 w-8 items-center justify-center rounded-full border border-neutral-200 dark:border-neutral-800 bg-neutral-100 dark:bg-neutral-900/50 transition-colors">
+      <button className="flex h-10 w-10 items-center justify-center rounded-full border border-neutral-200 dark:border-neutral-800 bg-neutral-100 dark:bg-neutral-900/50 transition-colors">
         <Monitor className="h-4 w-4 text-neutral-500 dark:text-neutral-400" />
       </button>
     );
@@ -29,7 +29,7 @@ export function ThemeToggle() {
   return (
     <button
       onClick={cycle}
-      className="flex h-8 w-8 items-center justify-center rounded-full border border-neutral-200 dark:border-neutral-800 bg-neutral-100 dark:bg-neutral-900/50 transition-colors hover:bg-neutral-200 dark:hover:bg-neutral-800"
+      className="flex h-10 w-10 items-center justify-center rounded-full border border-neutral-200 dark:border-neutral-800 bg-neutral-100 dark:bg-neutral-900/50 transition-colors hover:bg-neutral-200 dark:hover:bg-neutral-800"
       aria-label="Toggle theme"
     >
       <Icon className="h-4 w-4 text-neutral-500 dark:text-neutral-400" />
