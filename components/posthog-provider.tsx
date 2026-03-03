@@ -9,6 +9,7 @@ if (typeof window !== "undefined" && process.env.NEXT_PUBLIC_POSTHOG_KEY) {
   posthog.init(process.env.NEXT_PUBLIC_POSTHOG_KEY, {
     api_host: process.env.NEXT_PUBLIC_POSTHOG_HOST || "https://eu.i.posthog.com",
     capture_pageview: false, // on le gère manuellement pour le routing SPA
+    capture_pageleave: true, // nécessaire pour Web Analytics (durée de session, bounce rate)
   });
 }
 
@@ -17,7 +18,7 @@ function PostHogPageView() {
 
   useEffect(() => {
     if (pathname && posthog) {
-      posthog.capture("$pageview", { $current_url: window.location.href });
+      posthog.capture("$pageview");
     }
   }, [pathname]);
 
