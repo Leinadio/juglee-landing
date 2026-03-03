@@ -1,46 +1,46 @@
 # Juglee Landing Page
 
-Landing page de [Juglee](https://github.com/danieldupont/juglee-extension), une extension Chrome qui marque vos vidéos YouTube comme vues avec un badge vert visible sur les miniatures.
+Landing page for [Juglee](https://github.com/danieldupont/juglee-extension), a Chrome extension that marks your YouTube videos as watched with a green badge visible on thumbnails.
 
-## Stack technique
+## Tech Stack
 
 - **Next.js 16** (App Router)
 - **React 19** + **TypeScript**
 - **Tailwind CSS 4**
 - **shadcn/ui** (button, accordion, badge, separator)
 - **Magic UI** (animated-gradient-text, blur-fade, magic-card, shimmer-button, shine-border, border-beam, text-animate, particles, animated-shiny-text, number-ticker)
-- **Lucide React** (icônes)
+- **Lucide React** (icons)
 - **Framer Motion** (animations via Magic UI)
 
 ## Structure
 
 ```
 app/
-  layout.tsx          # Layout racine (lang fr, dark mode, SEO metadata)
-  page.tsx            # Page principale (composition des sections)
-  globals.css         # Variables CSS, thème dark green/zinc
+  layout.tsx          # Root layout (lang fr, dark mode, SEO metadata)
+  page.tsx            # Main page (section composition)
+  globals.css         # CSS variables, dark green/zinc theme
 
 components/
   landing/
-    navbar.tsx        # Barre de navigation fixe avec CTA
-    hero.tsx          # Section héro avec particles et gradient text
-    problem.tsx       # Section problème avec stats animées
-    features.tsx      # 4 feature cards interactives
-    how-it-works.tsx  # 3 étapes illustrées
-    pricing.tsx       # Carte de prix unique (9,99€)
-    faq.tsx           # 6 questions/réponses en accordion
-    footer.tsx        # Pied de page
-  ui/                 # Composants shadcn/ui et Magic UI
+    navbar.tsx        # Fixed navigation bar with CTA
+    hero.tsx          # Hero section with particles and gradient text
+    problem.tsx       # Problem section with animated stats
+    features.tsx      # 4 interactive feature cards
+    how-it-works.tsx  # 3 illustrated steps
+    pricing.tsx       # Single pricing card (9.99€)
+    faq.tsx           # 6 Q&A in accordion
+    footer.tsx        # Footer
+  ui/                 # shadcn/ui and Magic UI components
 ```
 
-## Développement
+## Development
 
 ```bash
 npm install
 npm run dev
 ```
 
-Le site est accessible sur [http://localhost:3000](http://localhost:3000).
+The site is available at [http://localhost:3000](http://localhost:3000).
 
 ## Build
 
@@ -49,6 +49,6 @@ npm run build
 npm start
 ```
 
-## Déploiement
+## Deployment
 
-Déployable sur [Vercel](https://vercel.com) en connectant le repository.
+Deployable on [Vercel](https://vercel.com) by connecting the repository.
