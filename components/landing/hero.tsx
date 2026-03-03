@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { AnimatedShinyText } from "@/components/ui/animated-shiny-text";
+import { AnimatedGradientText } from "@/components/ui/animated-gradient-text";
 import { BlurFade } from "@/components/ui/blur-fade";
 import { Highlighter } from "@/components/ui/highlighter";
 import { HeroVideoDialog } from "@/components/ui/hero-video-dialog";
@@ -14,14 +14,14 @@ export function Hero() {
   const t = useTranslations("Hero");
 
   return (
-    <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-6 pt-24">
+    <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-6 pt-20 md:pt-48">
       <div className="relative z-10 flex flex-col items-center text-center">
         <BlurFade delay={0.1} inView>
           <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-neutral-200 dark:border-neutral-800 bg-neutral-100 dark:bg-neutral-900/50 px-4 py-1.5">
             <MonitorSmartphone className="h-4 w-4 text-neutral-500 dark:text-neutral-400" />
-            <AnimatedShinyText className="text-sm">
+            <AnimatedGradientText colorFrom="#fc4e4e" colorTo="#d0a0ff" className="text-sm font-medium">
               {t("badge")}
-            </AnimatedShinyText>
+            </AnimatedGradientText>
           </div>
         </BlurFade>
 

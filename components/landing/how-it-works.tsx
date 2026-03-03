@@ -33,18 +33,16 @@ export function HowItWorks() {
 
       <div className="relative mt-16 grid grid-cols-1 gap-8 md:grid-cols-3">
         {/* Connecting line */}
-        <div className="absolute top-16 right-[16.67%] left-[16.67%] hidden h-px border-t border-dashed border-neutral-300 dark:border-neutral-700 md:block" />
+        <div className="absolute top-[7.25rem] right-[16.67%] left-[16.67%] hidden h-px border-t border-dashed border-neutral-300 dark:border-neutral-700 md:block" />
 
         {steps.map((step, i) => (
           <BlurFade key={step.number} delay={0.3 + i * 0.15} inView>
             <div className="flex flex-col items-center text-center">
-              <div className="relative flex h-32 w-32 items-center justify-center">
-                <span className="absolute -top-2 text-7xl font-bold text-[#d0a0ff]/10">
-                  {step.number}
-                </span>
-                <div className="relative z-10 flex h-14 w-14 items-center justify-center rounded-full border border-neutral-200 dark:border-neutral-800 bg-neutral-100 dark:bg-neutral-900">
-                  <step.icon className="h-6 w-6 text-[#fc4e4e]" />
-                </div>
+              <span className="mb-4 text-7xl font-bold text-[#d0a0ff]/10">
+                {step.number}
+              </span>
+              <div className="flex h-14 w-14 items-center justify-center rounded-full border border-neutral-200 dark:border-neutral-800 bg-neutral-100 dark:bg-neutral-900">
+                <step.icon className="h-6 w-6 text-[#fc4e4e]" />
               </div>
               <h3 className="mt-4 text-xl font-semibold text-neutral-900 dark:text-neutral-50">
                 {step.title}

@@ -32,10 +32,11 @@ export function Navbar() {
           <CheckCircle className="h-6 w-6 text-[#fc4e4e]" />
           <span className="text-xl font-bold text-neutral-900 dark:text-neutral-50">Juglee</span>
         </a>
+
         <div className="flex items-center gap-3">
           <ThemeToggle />
           <LanguageSwitcher />
-          <a href={DOWNLOAD_URL} download>
+          <a href={DOWNLOAD_URL} download className="hidden md:block">
             <ShimmerButton
               background="linear-gradient(135deg, #fc4e4e, #d0a0ff)"
               shimmerColor="rgba(255, 255, 255, 0.8)"
