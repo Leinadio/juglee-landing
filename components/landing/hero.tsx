@@ -14,7 +14,7 @@ export function Hero() {
   const t = useTranslations("Hero");
 
   return (
-    <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-6 pt-20 md:pt-48">
+    <section id="hero" className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-6 pt-20 md:pt-48">
       <div className="relative z-10 flex flex-col items-center text-center">
         <BlurFade delay={0.1} inView>
           <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-neutral-200 dark:border-neutral-800 bg-neutral-100 dark:bg-neutral-900/50 px-4 py-1.5">

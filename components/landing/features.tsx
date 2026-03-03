@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl";
 import { BlurFade } from "@/components/ui/blur-fade";
 import { BentoGrid, BentoCard } from "@/components/ui/bento-grid";
 import { CheckCircle, Eye, LayoutDashboard, ShieldCheck } from "lucide-react";
+import Image from "next/image";
 import { cn } from "@/lib/utils";
 
 const features = [
@@ -20,7 +21,7 @@ const features = [
     titleKey: "feature2Title",
     descKey: "feature2Description",
     className: "col-span-3 md:col-span-1",
-    backgroundImage: "/images/video_1.gif",
+    backgroundVideo: "/videos/video1.mp4",
     tall: true,
   },
   {
@@ -45,7 +46,7 @@ export function Features() {
   const t = useTranslations("Features");
 
   return (
-    <section className="mx-auto max-w-5xl px-6 py-24">
+    <section id="features" className="mx-auto max-w-5xl px-6 py-24">
       <BlurFade delay={0.1} inView>
         <p className="text-center text-sm font-semibold uppercase tracking-widest text-gradient">
           {t("label")}
@@ -60,8 +61,44 @@ export function Features() {
 
       <BlurFade delay={0.3} inView>
         <BentoGrid className="mt-16 auto-rows-[16rem] grid-cols-3 gap-4">
-          {features.map((feature, i) =>
-            feature.backgroundImage ? (
+          {features.map((feature, i) => {
+            const hasMedia = feature.backgroundImage || feature.backgroundVideo;
+            if (!hasMedia) {
+              return (
+                <BentoCard
+                  key={i}
+                  name={t(feature.titleKey)}
+                  description={t(feature.descKey)}
+                  Icon={feature.Icon}
+                  className={cn(feature.className, feature.height || "h-[16rem]")}
+                  background={
+                    <div className="absolute inset-0 bg-gradient-to-br from-[#fc4e4e]/8 to-[#d0a0ff]/8" />
+                  }
+                />
+              );
+            }
+
+            const media = feature.backgroundVideo ? (
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                className={feature.tall ? "h-full w-full object-cover object-top" : "absolute inset-0 h-full w-full object-cover object-top"}
+              >
+                <source src={feature.backgroundVideo} type="video/mp4" />
+              </video>
+            ) : (
+              <Image
+                src={feature.backgroundImage!}
+                alt={t(feature.titleKey)}
+                fill
+                className="object-cover object-top"
+                sizes={feature.tall ? "(max-width: 768px) 100vw, 66vw" : "(max-width: 768px) 100vw, 50vw"}
+              />
+            );
+
+            return (
               <div
                 key={i}
                 className={cn(
@@ -75,11 +112,7 @@ export function Features() {
                 {feature.tall ? (
                   <>
                     <div className="relative w-full min-h-0 flex-1">
-                      <img
-                        src={feature.backgroundImage}
-                        alt=""
-                        className="h-full w-full object-cover object-top"
-                      />
+                      {media}
                       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-48 bg-gradient-to-t from-[#0F0F0F] via-[#0F0F0F]/70 to-transparent" />
                     </div>
                     <div className="relative z-10 shrink-0 px-5 pb-5 -mt-6">
@@ -94,11 +127,7 @@ export function Features() {
                   </>
                 ) : (
                   <>
-                    <img
-                      src={feature.backgroundImage}
-                      alt=""
-                      className="absolute inset-0 h-full w-full object-cover object-top"
-                    />
+                    {media}
                     <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#0F0F0F] via-[#0F0F0F]/50 to-transparent" />
                     <div className="relative z-10 flex h-full flex-col justify-end px-5 pb-5">
                       <feature.Icon className="h-10 w-10 text-neutral-50" />
@@ -112,19 +141,8 @@ export function Features() {
                   </>
                 )}
               </div>
-            ) : (
-              <BentoCard
-                key={i}
-                name={t(feature.titleKey)}
-                description={t(feature.descKey)}
-                Icon={feature.Icon}
-                className={cn(feature.className, feature.height || "h-[16rem]")}
-                background={
-                  <div className="absolute inset-0 bg-gradient-to-br from-[#fc4e4e]/8 to-[#d0a0ff]/8" />
-                }
-              />
-            )
-          )}
+            );
+          })}
         </BentoGrid>
       </BlurFade>
     </section>

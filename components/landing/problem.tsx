@@ -26,7 +26,7 @@ export function Problem() {
   ];
 
   return (
-    <section className="mx-auto max-w-5xl px-6 py-24">
+    <section id="problem" className="mx-auto max-w-5xl px-6 py-24">
       <BlurFade delay={0.1} inView>
         <p className="text-sm font-semibold uppercase tracking-widest text-gradient">
           {t("label")}

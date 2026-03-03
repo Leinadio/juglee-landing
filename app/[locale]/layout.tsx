@@ -7,6 +7,8 @@ import { notFound } from "next/navigation";
 import { ThemeProvider } from "@/components/theme-provider";
 import "../globals.css";
 
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://jugleey.com";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -28,20 +30,42 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "Metadata" });
+  const alternateLocale = locale === "fr" ? "en" : "fr";
 
   return {
+    metadataBase: new URL(SITE_URL),
     title: t("title"),
     description: t("description"),
+    alternates: {
+      canonical: `/${locale}`,
+      languages: {
+        en: "/en",
+        fr: "/fr",
+        "x-default": "/en",
+      },
+    },
     openGraph: {
       title: t("ogTitle"),
       description: t("ogDescription"),
+      url: `${SITE_URL}/${locale}`,
+      siteName: "Jugleey",
       locale: locale === "fr" ? "fr_FR" : "en_US",
+      alternateLocale: alternateLocale === "fr" ? "fr_FR" : "en_US",
       type: "website",
+      images: [
+        {
+          url: "/images/og-image.png",
+          width: 1200,
+          height: 630,
+          alt: t("ogTitle"),
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
       title: t("ogTitle"),
       description: t("ogDescription"),
+      images: ["/images/og-image.png"],
     },
   };
 }
