@@ -7,6 +7,7 @@ import { Pricing } from "@/components/landing/pricing";
 import { FAQ } from "@/components/landing/faq";
 import { About } from "@/components/landing/about";
 import { Footer } from "@/components/landing/footer";
+import { ReviewPopup } from "@/components/landing/review-popup";
 import { Particles } from "@/components/ui/particles";
 import { ScrollProgress } from "@/components/ui/scroll-progress";
 import { getTranslations } from "next-intl/server";
@@ -80,6 +81,7 @@ export default async function Home({
         <About />
       </main>
       <Footer />
+      <ReviewPopup />
     </div>
   );
 }

@@ -112,6 +112,18 @@
     "submit": "Share my feedback",
     "thankYou": "Thank you so much! Your kind words mean the world to us and keep us going.",
     "error": "Oops, something went wrong. Want to try again?",
-    "triggerLabel": "Leave a testimonial"
+    "triggerLabel": "Leave a testimonial",
+    "ratingLabel": "Your rating (optional)"
+  },
+  "Review": {
+    "title": "Thanks for downloading Jugleey!",
+    "subtitle": "We'd love to hear what you think.",
+    "ratingLabel": "How would you rate Jugleey?",
+    "namePlaceholder": "Your name (optional)",
+    "messagePlaceholder": "A few words about your experience... (optional)",
+    "submit": "Share my feedback",
+    "thankYou": "Thank you so much! Your feedback means the world to us.",
+    "error": "Oops, something went wrong. Want to try again?",
+    "skip": "Maybe later"
   }
 }

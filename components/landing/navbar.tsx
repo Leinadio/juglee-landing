@@ -9,7 +9,7 @@ import { LanguageSwitcher } from "./language-switcher";
 import { TestimonialWidget } from "./testimonial-widget";
 import { ThemeToggle } from "./theme-toggle";
 
-const DOWNLOAD_URL = "/juglee-extension.zip";
+const DOWNLOAD_URL = "/jugleey-extension.zip";
 
 export function Navbar() {
   const t = useTranslations("Navbar");
@@ -39,18 +39,24 @@ export function Navbar() {
           <ThemeToggle />
           <LanguageSwitcher />
           <TestimonialWidget />
-          <a href={DOWNLOAD_URL} download className="hidden md:block" onClick={() => posthog.capture("download_click", { location: "navbar" })}>
-            <ShimmerButton
-              background="linear-gradient(135deg, #fc4e4e, #d0a0ff)"
-              shimmerColor="rgba(255, 255, 255, 0.8)"
-              shimmerSize="2px"
-              className="px-5 py-2"
-            >
-              <span className="text-sm font-medium text-white drop-shadow-sm">
-                {t("cta")}
-              </span>
-            </ShimmerButton>
-          </a>
+          <ShimmerButton
+            background="linear-gradient(135deg, #fc4e4e, #d0a0ff)"
+            shimmerColor="rgba(255, 255, 255, 0.8)"
+            shimmerSize="2px"
+            className="hidden md:block px-5 py-2"
+            onClick={() => {
+              posthog.capture("download_click", { location: "navbar" });
+              window.dispatchEvent(new Event("juglee:download"));
+              const a = document.createElement("a");
+              a.href = DOWNLOAD_URL;
+              a.download = "";
+              a.click();
+            }}
+          >
+            <span className="text-sm font-medium text-white drop-shadow-sm">
+              {t("cta")}
+            </span>
+          </ShimmerButton>
         </div>
       </div>
     </nav>

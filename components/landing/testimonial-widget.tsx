@@ -6,7 +6,7 @@ import posthog from "posthog-js";
 import { motion, AnimatePresence } from "motion/react";
 import { ShimmerButton } from "@/components/ui/shimmer-button";
 import { ShineBorder } from "@/components/ui/shine-border";
-import { MessageSquareHeart, X, Loader2, Send } from "lucide-react";
+import { MessageSquareHeart, X, Loader2, Send, Star } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 export function TestimonialWidget() {
@@ -15,6 +15,8 @@ export function TestimonialWidget() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [rating, setRating] = useState(0);
+  const [hoverRating, setHoverRating] = useState(0);
   const [status, setStatus] = useState<
     "idle" | "loading" | "success" | "error"
   >("idle");
@@ -46,6 +48,7 @@ export function TestimonialWidget() {
           name: name.trim(),
           email: email.trim(),
           message: message.trim(),
+          rating: rating || undefined,
         }),
       });
       if (!res.ok) throw new Error();
@@ -56,6 +59,8 @@ export function TestimonialWidget() {
         setName("");
         setEmail("");
         setMessage("");
+        setRating(0);
+        setHoverRating(0);
         setStatus("idle");
       }, 3000);
     } catch {
@@ -145,6 +150,32 @@ export function TestimonialWidget() {
                     placeholder={t("emailPlaceholder")}
                     className={inputClasses}
                   />
+                  <div>
+                    <p className="mb-1.5 text-xs text-neutral-500 dark:text-neutral-400">
+                      {t("ratingLabel")}
+                    </p>
+                    <div className="flex gap-1">
+                      {[1, 2, 3, 4, 5].map((star) => (
+                        <button
+                          key={star}
+                          type="button"
+                          onClick={() => setRating(star)}
+                          onMouseEnter={() => setHoverRating(star)}
+                          onMouseLeave={() => setHoverRating(0)}
+                          className="transition-transform hover:scale-110"
+                        >
+                          <Star
+                            className={cn(
+                              "h-6 w-6 transition-colors",
+                              (hoverRating || rating) >= star
+                                ? "fill-yellow-400 text-yellow-400"
+                                : "text-neutral-300 dark:text-neutral-600"
+                            )}
+                          />
+                        </button>
+                      ))}
+                    </div>
+                  </div>
                   <textarea
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}

@@ -106,12 +106,24 @@
     "title": "On aimerait avoir votre avis !",
     "subtitle": "Vous utilisez Jugleey ? Dites-nous ce que vous en pensez, ca nous ferait super plaisir !",
     "consent": "Votre message pourra être affiché ici pour inspirer d'autres utilisateurs.",
-    "namePlaceholder": "Votre petit nom",
+    "namePlaceholder": "Votre nom",
     "emailPlaceholder": "Votre email (facultatif)",
     "messagePlaceholder": "Racontez-nous votre expérience avec Jugleey...",
     "submit": "Envoyer mon avis",
     "thankYou": "Merci infiniment ! Votre retour nous touche beaucoup et nous motive à continuer.",
     "error": "Oups, quelque chose n'a pas marché. On réessaye ?",
-    "triggerLabel": "Laisser un témoignage"
+    "triggerLabel": "Laisser un témoignage",
+    "ratingLabel": "Votre note (facultatif)"
+  },
+  "Review": {
+    "title": "Merci d'avoir téléchargé Jugleey !",
+    "subtitle": "Ça nous ferait super plaisir d'avoir votre avis.",
+    "ratingLabel": "Comment notez-vous Jugleey ?",
+    "namePlaceholder": "Votre nom (facultatif)",
+    "messagePlaceholder": "Un petit mot sur votre expérience... (facultatif)",
+    "submit": "Envoyer mon avis",
+    "thankYou": "Merci infiniment ! Votre retour nous touche beaucoup.",
+    "error": "Oups, quelque chose n'a pas marché. On réessaye ?",
+    "skip": "Peut-être plus tard"
   }
 }

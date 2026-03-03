@@ -42,5 +42,5 @@ npm run lint     # ESLint
 - Dark mode uniquement (classe `dark` sur `<html>`)
 - Couleurs YouTube : rouge `#FF0000` (primaire), fond `#0F0F0F`, surfaces neutral-900
 - Contenu bilingue (FR/EN) via next-intl, fichiers dans `messages/`
-- Extension gratuite — CTA → téléchargement direct du .zip (`/public/juglee-extension.zip`), installation en mode développeur
+- Extension gratuite — CTA → téléchargement direct du .zip (`/public/jugleey-extension.zip`), installation en mode développeur
 - Composants sections dans `components/landing/`, composants UI dans `components/ui/`

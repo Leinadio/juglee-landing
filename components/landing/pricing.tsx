@@ -5,7 +5,7 @@ import posthog from "posthog-js";
 import { BlurFade } from "@/components/ui/blur-fade";
 import { ShimmerButton } from "@/components/ui/shimmer-button";
 
-const DOWNLOAD_URL = "/juglee-extension.zip";
+const DOWNLOAD_URL = "/jugleey-extension.zip";
 
 const installStepKeys = [
   "installStep1",
@@ -70,18 +70,24 @@ export function Pricing() {
 
       <BlurFade delay={0.7} inView>
         <div className="mt-10 flex flex-col items-center gap-4">
-          <a href={DOWNLOAD_URL} download onClick={() => posthog.capture("download_click", { location: "pricing" })}>
-            <ShimmerButton
-              background="linear-gradient(135deg, #fc4e4e, #d0a0ff)"
-              shimmerColor="rgba(255, 255, 255, 0.8)"
-              shimmerSize="2px"
-              className="px-8 py-4 shadow-2xl"
-            >
-              <span className="text-lg font-semibold text-white drop-shadow-sm">
-                {t("cta")}
-              </span>
-            </ShimmerButton>
-          </a>
+          <ShimmerButton
+            background="linear-gradient(135deg, #fc4e4e, #d0a0ff)"
+            shimmerColor="rgba(255, 255, 255, 0.8)"
+            shimmerSize="2px"
+            className="px-8 py-4 shadow-2xl"
+            onClick={() => {
+              posthog.capture("download_click", { location: "pricing" });
+              window.dispatchEvent(new Event("juglee:download"));
+              const a = document.createElement("a");
+              a.href = DOWNLOAD_URL;
+              a.download = "";
+              a.click();
+            }}
+          >
+            <span className="text-lg font-semibold text-white drop-shadow-sm">
+              {t("cta")}
+            </span>
+          </ShimmerButton>
           <p className="text-sm text-neutral-400 dark:text-neutral-500">
             {t("footnote")}
           </p>
