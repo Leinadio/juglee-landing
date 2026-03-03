@@ -36,8 +36,8 @@
     "feature1Description": "A single click to mark a video as watched. The icon appears instantly on the thumbnail.",
     "feature2Title": "A badge on every thumbnail",
     "feature2Description": "Spot already-watched videos at a glance thanks to the badge displayed directly on YouTube.",
-    "feature3Title": "Export and import your data",
-    "feature3Description": "Back up your watch history as JSON and restore it anytime. Your data belongs to you.",
+    "feature3Title": "Your dashboard at a glance",
+    "feature3Description": "Track your watched videos, browse your history, and manage your data — all from the extension popup.",
     "feature4Title": "Works across all of YouTube",
     "feature4Description": "Home page, search, channels, playlists, Shorts... Juglee works everywhere thumbnails are displayed."
   },

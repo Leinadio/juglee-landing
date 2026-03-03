@@ -3,7 +3,7 @@
 import { useTranslations } from "next-intl";
 import { BlurFade } from "@/components/ui/blur-fade";
 import { BentoGrid, BentoCard } from "@/components/ui/bento-grid";
-import { CheckCircle, Eye, Download, Globe } from "lucide-react";
+import { CheckCircle, Eye, LayoutDashboard, Globe } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const features = [
@@ -13,18 +13,23 @@ const features = [
     descKey: "feature1Description",
     className: "col-span-3 md:col-span-2",
     backgroundImage: "/images/image_1.png",
+    tall: true,
   },
   {
     Icon: Eye,
     titleKey: "feature2Title",
     descKey: "feature2Description",
     className: "col-span-3 md:col-span-1",
+    backgroundImage: "/images/video_1.gif",
+    tall: true,
   },
   {
-    Icon: Download,
+    Icon: LayoutDashboard,
     titleKey: "feature3Title",
     descKey: "feature3Description",
     className: "col-span-3 md:col-span-1",
+    backgroundImage: "/images/extension_ui.png",
+    height: "h-[22rem]",
   },
   {
     Icon: Globe,
@@ -58,28 +63,52 @@ export function Features() {
               <div
                 key={i}
                 className={cn(
-                  "group relative col-span-3 row-span-2 flex flex-col overflow-hidden rounded-xl md:col-span-2",
+                  "group relative overflow-hidden rounded-xl",
+                  feature.tall ? "row-span-2 flex flex-col" : (feature.height || "h-[16rem]"),
+                  feature.className,
                   "bg-[#0F0F0F] [box-shadow:0_0_0_1px_rgba(0,0,0,.03),0_2px_4px_rgba(0,0,0,.05),0_12px_24px_rgba(0,0,0,.05)]",
                   "transform-gpu dark:[box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] dark:[border:1px_solid_rgba(255,255,255,.1)]"
                 )}
               >
-                <div className="relative w-full min-h-0 flex-1">
-                  <img
-                    src={feature.backgroundImage}
-                    alt=""
-                    className="h-full w-full object-cover object-top"
-                  />
-                  <div className="pointer-events-none absolute inset-x-0 bottom-0 h-48 bg-gradient-to-t from-[#0F0F0F] via-[#0F0F0F]/70 to-transparent" />
-                </div>
-                <div className="relative z-10 shrink-0 px-5 pb-5 -mt-6">
-                  <feature.Icon className="h-10 w-10 text-neutral-50" />
-                  <h3 className="mt-1 text-xl font-semibold text-neutral-50">
-                    {t(feature.titleKey)}
-                  </h3>
-                  <p className="max-w-lg text-neutral-300">
-                    {t(feature.descKey)}
-                  </p>
-                </div>
+                {feature.tall ? (
+                  <>
+                    <div className="relative w-full min-h-0 flex-1">
+                      <img
+                        src={feature.backgroundImage}
+                        alt=""
+                        className="h-full w-full object-cover object-top"
+                      />
+                      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-48 bg-gradient-to-t from-[#0F0F0F] via-[#0F0F0F]/70 to-transparent" />
+                    </div>
+                    <div className="relative z-10 shrink-0 px-5 pb-5 -mt-6">
+                      <feature.Icon className="h-10 w-10 text-neutral-50" />
+                      <h3 className="mt-1 text-xl font-semibold text-neutral-50">
+                        {t(feature.titleKey)}
+                      </h3>
+                      <p className="max-w-lg text-neutral-300">
+                        {t(feature.descKey)}
+                      </p>
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <img
+                      src={feature.backgroundImage}
+                      alt=""
+                      className="absolute inset-0 h-full w-full object-cover object-top"
+                    />
+                    <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#0F0F0F] via-[#0F0F0F]/50 to-transparent" />
+                    <div className="relative z-10 flex h-full flex-col justify-end px-5 pb-5">
+                      <feature.Icon className="h-10 w-10 text-neutral-50" />
+                      <h3 className="mt-1 text-xl font-semibold text-neutral-50">
+                        {t(feature.titleKey)}
+                      </h3>
+                      <p className="max-w-lg text-neutral-300">
+                        {t(feature.descKey)}
+                      </p>
+                    </div>
+                  </>
+                )}
               </div>
             ) : (
               <BentoCard

@@ -36,8 +36,8 @@
     "feature1Description": "Un simple clic pour marquer une vidéo comme vue. L'icône apparaît instantanément sur la miniature.",
     "feature2Title": "Badge sur chaque miniature",
     "feature2Description": "Repérez les vidéos déjà vues en un coup d'œil grâce au badge affiché directement sur YouTube.",
-    "feature3Title": "Exportez et importez vos données",
-    "feature3Description": "Sauvegardez votre historique en JSON et restaurez-le à tout moment. Vos données vous appartiennent.",
+    "feature3Title": "Votre tableau de bord en un clin d'œil",
+    "feature3Description": "Suivez vos vidéos vues, parcourez votre historique et gérez vos données — le tout depuis le popup de l'extension.",
     "feature4Title": "Fonctionne partout sur YouTube",
     "feature4Description": "Accueil, recherche, chaînes, playlists, Shorts... Juglee fonctionne partout où les miniatures sont affichées."
   },
