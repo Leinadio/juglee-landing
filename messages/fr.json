@@ -67,11 +67,13 @@
     "feature6": "Mises à jour gratuites",
     "feature7": "Support par email",
     "installTitle": "Comment installer l'extension",
-    "installStep1": "Décompressez le fichier .zip téléchargé",
-    "installStep2": "Ouvrez <code>chrome://extensions</code> dans Chrome",
-    "installStep3": "Activez le <bold>Mode développeur</bold> en haut à droite",
-    "installStep4": "Cliquez sur <bold>Charger l'extension non empaquetée</bold>",
-    "installStep5": "Sélectionnez le dossier décompressé"
+    "installNote": "Juglee n'est pas encore disponible sur le Chrome Web Store. Vous pouvez l'installer manuellement en quelques étapes via le mode développeur de Chrome.",
+    "installStep1": "Cliquez sur le bouton ci-dessous pour télécharger le <bold>fichier .zip</bold>",
+    "installStep2": "Décompressez le fichier téléchargé dans un dossier sur votre ordinateur",
+    "installStep3": "Dans Chrome, tapez <code>chrome://extensions</code> dans la barre d'adresse et appuyez sur Entrée",
+    "installStep4": "Activez le bouton <bold>Mode développeur</bold> en haut à droite de la page",
+    "installStep5": "Cliquez sur le bouton <bold>Charger l'extension non empaquetée</bold> qui apparaît en haut à gauche",
+    "installStep6": "Sélectionnez le dossier décompressé — l'icône Juglee apparaîtra dans la barre d'outils de votre navigateur"
   },
   "FAQ": {
     "title": "Questions fréquentes",
@@ -103,10 +105,11 @@
     "errorTitle": "Clé invalide",
     "errorDescription": "Cette clé de licence n'a pas été trouvée. Vérifiez votre email et réessayez.",
     "installTitle": "Comment installer l'extension",
-    "installStep1": "Décompressez le fichier .zip téléchargé",
-    "installStep2": "Ouvrez chrome://extensions dans Chrome",
-    "installStep3": "Activez le \"Mode développeur\" en haut à droite",
-    "installStep4": "Cliquez sur \"Charger l'extension non empaquetée\"",
-    "installStep5": "Sélectionnez le dossier décompressé"
+    "installStep1": "Décompressez le fichier .zip téléchargé dans un dossier sur votre ordinateur",
+    "installStep2": "Dans Chrome, tapez chrome://extensions dans la barre d'adresse et appuyez sur Entrée",
+    "installStep3": "Activez le bouton \"Mode développeur\" en haut à droite de la page",
+    "installStep4": "Cliquez sur \"Charger l'extension non empaquetée\" en haut à gauche",
+    "installStep5": "Sélectionnez le dossier décompressé",
+    "installStep6": "C'est fait ! L'icône Juglee apparaît dans votre barre d'outils"
   }
 }

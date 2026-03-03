@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import { ShimmerButton } from "@/components/ui/shimmer-button";
-import { CheckCircle } from "lucide-react";
+import Image from "next/image";
 import { LanguageSwitcher } from "./language-switcher";
 import { ThemeToggle } from "./theme-toggle";
 
@@ -29,7 +29,7 @@ export function Navbar() {
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <a href="#" className="flex items-center gap-2">
-          <CheckCircle className="h-6 w-6 text-[#fc4e4e]" />
+          <Image src="/images/icon.png" alt="Juglee" width={24} height={24} />
           <span className="text-xl font-bold text-neutral-900 dark:text-neutral-50">Juglee</span>
         </a>
 

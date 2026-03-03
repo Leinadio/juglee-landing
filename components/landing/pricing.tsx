@@ -12,6 +12,7 @@ const installStepKeys = [
   "installStep3",
   "installStep4",
   "installStep5",
+  "installStep6",
 ] as const;
 
 export function Pricing() {
@@ -29,7 +30,10 @@ export function Pricing() {
       </BlurFade>
 
       <BlurFade delay={0.2} inView>
-        <div className="mt-12 w-full max-w-md rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-neutral-100 dark:bg-neutral-900/50 p-8">
+        <div className="mt-12 w-full max-w-lg rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-neutral-100 dark:bg-neutral-900/50 p-8">
+          <p className="mb-6 text-sm leading-relaxed text-neutral-500 dark:text-neutral-400">
+            {t("installNote")}
+          </p>
           <ol className="space-y-4 text-sm text-neutral-500 dark:text-neutral-400">
             {installStepKeys.map((key, i) => (
               <li key={key} className="flex items-start gap-3">
